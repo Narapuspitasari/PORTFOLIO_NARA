@@ -1,0 +1,3084 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>
+    Nara Puspitasari — Portfolio | Data Analyst, Front-End &amp; Graphic
+    Design
+  </title>
+  <meta
+    content="One-page portfolio of Nara Puspitasari, Informatics Engineering student at UNITAMA (GPA 3.88). About, skills, projects, experience, education, organizations, certificates, CV, and contact — all on a single scrolling page."
+    name="description" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;family=Noto+Serif+SC:wght@400;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("nara-theme");
+        var theme =
+          saved ||
+          (window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <button aria-label="Open navigation menu" class="burger" id="burgerBtn">
+    ☰
+  </button>
+  <button aria-label="Toggle light/dark theme" class="theme-toggle" id="themeToggleBtn" type="button">
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <circle cx="12" cy="12" r="4.5"></circle>
+      <line x1="12" y1="2" x2="12" y2="4.5"></line>
+      <line x1="12" y1="19.5" x2="12" y2="22"></line>
+      <line x1="2" y1="12" x2="4.5" y2="12"></line>
+      <line x1="19.5" y1="12" x2="22" y2="12"></line>
+      <line x1="4.9" y1="4.9" x2="6.6" y2="6.6"></line>
+      <line x1="17.4" y1="17.4" x2="19.1" y2="19.1"></line>
+      <line x1="4.9" y1="19.1" x2="6.6" y2="17.4"></line>
+      <line x1="17.4" y1="6.6" x2="19.1" y2="4.9"></line>
+    </svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"></path>
+    </svg>
+  </button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span class="brand-name">Nara Puspitasari</span>
+      </div>
+      <div class="folder-label"></div>
+      <nav class="file-list">
+        <a class="file-item active" data-section="home" href="#home"><span class="idx">一</span>Home</a>
+        <a class="file-item" data-section="about" href="#about"><span class="idx">二</span>About</a>
+        <a class="file-item" data-section="skills" href="#skills"><span class="idx">三</span>Skills</a>
+        <a class="file-item" data-section="projects" href="#projects"><span class="idx">四</span>Projects</a>
+        <a class="file-item" data-section="experience" href="#experience"><span class="idx">五</span>Experience</a>
+        <a class="file-item" data-section="education" href="#education"><span class="idx">六</span>Education</a>
+        <a class="file-item" data-section="organization" href="#organization"><span class="idx">七</span>Organization</a>
+        <a class="file-item" data-section="certificates" href="#certificates"><span class="idx">八</span>Certificates</a>
+        <a class="file-item" data-section="resume" href="#resume"><span class="idx">九</span>Resume</a>
+        <a class="file-item" data-section="contact" href="#contact"><span class="idx">十</span>Contact</a>
+      </nav>
+      <div class="sidebar-foot">
+        <div>© 2026 Nara Puspitasari v.1.0</div>
+        <!-- <div>B.Sc. Informatics Engineering · UNITAMA</div> -->
+      </div>
+    </aside>
+    <main>
+      <!-- HERO SECTION (POSTER REDESIGN) -->
+      <div class="section" id="home" style="margin-top: 10px">
+        <div class="hero-poster-wrapper">
+          <!-- Uploaded ink-wash calligraphy artwork, used as a soft hero backdrop -->
+          <img class="hero-calligraphy-bg" src="hero-calligraphy-bg (1q).png" alt="" aria-hidden="true" />
+
+          <!-- Floating Mandarin words that dodge the cursor -->
+          <div class="hero-word-rain" id="heroWordRain" aria-hidden="true">
+            <!-- <span class="hero-word" style="left:6%; top:10%; font-size:22px;">探索</span> -->
+            <!-- <span class="hero-word" style="left:16%; top:42%; font-size:18px;">创造</span> -->
+            <!-- <span class="hero-word" style="left:11%; top:70%; font-size:16px;">成长</span> -->
+            <span class="hero-word" style="left: 27%; top: 20%; font-size: 20px">数据</span>
+            <span class="hero-word" style="left: 34%; top: 58%; font-size: 16px">分析</span>
+            <span class="hero-word" style="left: 45%; top: 14%; font-size: 18px">技术</span>
+            <span class="hero-word" style="left: 52%; top: 46%; font-size: 22px">设计</span>
+            <span class="hero-word" style="left: 60%; top: 76%; font-size: 16px">学习</span>
+            <span class="hero-word" style="left: 69%; top: 24%; font-size: 18px">编程</span>
+            <span class="hero-word" style="left: 76%; top: 56%; font-size: 20px">未来</span>
+            <span class="hero-word" style="left: 84%; top: 12%; font-size: 16px">初心</span>
+            <span class="hero-word" style="left: 90%; top: 64%; font-size: 18px">进化</span>
+          </div>
+
+          <!-- Background Oriental Sumi-e Vector Artwork -->
+          <!-- <svg class="hero-bg-art hero-bg-cloud" viewBox="0 0 200 100" fill="none" stroke="#2E2721" stroke-width="1.5">
+              <path d="M10 60 C10 45, 25 35, 40 40 C50 25, 75 20, 95 35 C110 20, 145 20, 160 40 C175 35, 190 45, 190 60 C190 75, 175 80, 160 80 L40 80 C25 80, 10 75, 10 60 Z"/>
+              <path d="M30 65 C45 60, 60 65, 75 62"/>
+              <path d="M100 68 C120 62, 140 68, 160 65"/>
+            </svg>
+            <svg class="hero-bg-art hero-bg-wave" viewBox="0 0 200 120" fill="none" stroke="#2E2721" stroke-width="1.5">
+              <path d="M0 100 Q40 40, 80 70 Q110 30, 150 75 Q180 50, 200 90 L200 120 L0 120 Z"/>
+              <path d="M0 110 Q30 70, 70 95 Q100 60, 140 98 Q170 70, 200 105"/>
+              <path d="M60 55 Q50 45, 45 50 M125 40 Q115 30, 110 38 M165 60 Q155 50, 150 58"/>
+            </svg>
+            <svg class="hero-bg-art hero-bg-pagoda" viewBox="0 0 120 160" fill="none" stroke="#2E2721" stroke-width="1.5">
+              <path d="M60 10 L60 25 M45 25 L75 25 M30 35 L90 35 M35 35 L40 50 L80 50 L85 35 M20 50 L100 50 M25 50 L30 75 L90 75 L95 50 M10 75 L110 75 M15 75 L20 110 L100 110 L105 75 M0 110 L120 110 M10 110 L15 160 L105 160 L110 110"/>
+            </svg>
+            <svg class="hero-bg-art hero-bg-birds" viewBox="0 0 120 60" fill="#2E2721">
+              <path d="M10 20 Q 18 10, 25 18 Q 32 10, 40 20 Q 30 18, 25 24 Q 20 18, 10 20 Z"/>
+              <path d="M50 35 Q 56 27, 62 33 Q 68 27, 74 35 Q 66 33, 62 38 Q 58 33, 50 35 Z" transform="scale(0.8) translate(20, 10)"/>
+              <path d="M80 12 Q 85 5, 90 10 Q 95 5, 100 12 Q 93 10, 90 14 Q 87 10, 80 12 Z" transform="scale(0.7) translate(35, -5)"/>
+            </svg> -->
+
+          <!-- Brand Badge Logo Top Left -->
+          <div class="poster-brand-badge">
+            <span class="poster-brand-top">NP</span>
+            <span class="poster-brand-bot">PORTFOLIO</span>
+          </div>
+
+          <!-- Main Poster Grid (3 Columns) -->
+          <div class="poster-grid">
+            <!-- LEFT CONTENT COLUMN -->
+            <div class="poster-left">
+              <div class="poster-hashtag">探索 · 创造 · 成长</div>
+              <h1 class="poster-title">
+                Nara <span class="accent-sub">Puspitasari</span>
+              </h1>
+              <p class="poster-quote">
+                Information Technology Enthusiast & Aspiring Data Analyst
+                Passionate about transforming data and ideas into meaningful
+                insights and digital solutions.
+              </p>
+              <p style="
+                    margin-top: 8px;
+                    font-size: 13px;
+                    color: var(--amber-soft);
+                    font-weight: 700;
+                  ">
+                Data Analyst · Data Science &amp; · Front-End Development
+
+              </p>
+              <div class="poster-chevron">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  style="margin-top: -10px">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+
+              <p></p>
+              <!-- <a class="poster-link-pill" href="https://github.com/Narapuspitasari" target="_blank" rel="noopener">
+                  narapuspitasari.dev
+                </a> -->
+              <div class="btn-row" style="margin-top: 10px">
+                <a class="btn btn-primary" href="#projects">View My Projects</a>
+                <a class="btn btn-outline" download="" href="assets/CV_Nara_Puspitasari.pdf" target="_blank">Download
+                  CV</a>
+              </div>
+              <div class="social-links">
+                <a aria-label="GitHub Profile" class="social-pill" href="https://github.com/Narapuspitasari"
+                  rel="noopener" target="_blank">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z">
+                    </path>
+                  </svg>
+                  GitHub
+                </a>
+                <a aria-label="LinkedIn Profile" class="social-pill"
+                  href="https://www.linkedin.com/in/nara-puspitasari-169b65243/" rel="noopener" target="_blank">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z">
+                    </path>
+                  </svg>
+                  LinkedIn
+                </a>
+                <a aria-label="Send Email" class="social-pill" href="mailto:narapark878@gmail.com">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z">
+                    </path>
+                  </svg>
+                  Email
+                </a>
+              </div>
+            </div>
+
+            <!-- CENTER CIRCLE PORTAL & PORTRAIT -->
+            <div class="poster-center">
+              <!-- Floating Feather SVGs -->
+              <!-- <svg class="floating-feather feather-1" viewBox="0 0 100 100" fill="none">
+                  <path d="M85 15 C 60 25, 35 55, 15 85 C 25 75, 45 60, 65 50 C 75 45, 82 30, 85 15 Z" fill="#2E2721" opacity="0.85"/>
+                  <path d="M85 15 C 55 45, 35 65, 15 85" stroke="#F1E9D8" stroke-width="1.5" opacity="0.6"/>
+                </svg>
+                <svg class="floating-feather feather-2" viewBox="0 0 100 100" fill="none">
+                  <path d="M15 15 C 35 30, 60 65, 85 85 C 70 70, 50 55, 30 40 C 20 32, 15 22, 15 15 Z" fill="#2E2721" opacity="0.88"/>
+                  <path d="M15 15 C 45 45, 65 65, 85 85" stroke="#F1E9D8" stroke-width="1.5" opacity="0.6"/>
+                </svg>
+                <svg class="floating-feather feather-3" viewBox="0 0 100 100" fill="none">
+                  <path d="M80 20 C 55 30, 35 60, 20 80 C 30 70, 50 55, 68 45 C 75 40, 78 30, 80 20 Z" fill="#2E2721" opacity="0.82"/>
+                  <path d="M80 20 C 50 48, 32 66, 20 80" stroke="#F1E9D8" stroke-width="1.5" opacity="0.5"/>
+                </svg> -->
+
+              <div class="poster-circle-portal">
+                <div class="poster-photo-wrapper">
+                  <img alt="Nara Puspitasari" class="poster-photo" src="assets/profile/trans.png" />
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT ACCENT COLUMN -->
+            <div class="poster-right">
+              <div class="poster-tag-header">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C12 2 10.5 6.5 8 9C5.5 11.5 2 12 2 12C2 12 6.5 13.5 9 16C11.5 18.5 12 22 12 22C12 22 13.5 17.5 16 15C18.5 12.5 22 12 22 12C22 12 17.5 10.5 15 8C12.5 5.5 12 2 12 2Z" />
+                </svg>
+                进化
+              </div>
+
+              <div class="poster-big-year" id="currentYear"></div>
+              <div class="poster-date-sub" id="currentDate"></div>
+              <!-- <div class="poster-big-year">2026</div>
+                <div class="poster-date-sub">09.11</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- AREA FOKUS MINAT (CORE FOCUS AREAS) -->
+      <div class="section">
+        <div class="section-head">
+          <div class="eyebrow">career focus</div>
+          <h2>Core Focus Areas</h2>
+        </div>
+        <div class="grid-4">
+          <div class="focus-card">
+            <div class="focus-icon-wrapper">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
+              </svg>
+            </div>
+            <h3 class="focus-card-title">Data Analyst</h3>
+            <p class="focus-card-desc">
+              Data processing, SQL queries, Excel-based analysis, and
+              information visualization.
+            </p>
+            <div class="focus-card-tags">
+              <span class="focus-mini-tag">SQL</span>
+              <span class="focus-mini-tag">Excel</span>
+              <span class="focus-mini-tag">Data Vis</span>
+            </div>
+          </div>
+          <div class="focus-card">
+            <div class="focus-icon-wrapper">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z" />
+              </svg>
+            </div>
+            <h3 class="focus-card-title">Data Science</h3>
+            <p class="focus-card-desc">
+              Machine learning and computer vision experiments in Python and
+              TensorFlow/Keras for image classification.
+            </p>
+            <div class="focus-card-tags">
+              <span class="focus-mini-tag">Python</span>
+              <span class="focus-mini-tag">TensorFlow</span>
+              <span class="focus-mini-tag">Keras</span>
+            </div>
+          </div>
+          <div class="focus-card">
+            <div class="focus-icon-wrapper">
+              <svg viewBox="0 0 24 24">
+                <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
+              </svg>
+            </div>
+            <h3 class="focus-card-title">Front-End Dev</h3>
+            <p class="focus-card-desc">
+              Responsive web interfaces built with HTML, CSS, JavaScript, PHP,
+              and modern frameworks.
+            </p>
+            <div class="focus-card-tags">
+              <span class="focus-mini-tag">HTML/CSS</span>
+              <span class="focus-mini-tag">JavaScript</span>
+              <span class="focus-mini-tag">PHP</span>
+            </div>
+          </div>
+          <div class="focus-card">
+            <div class="focus-icon-wrapper">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.2 19.53 10.56 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-3.5 9.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm3.5-3c-.83 0-1.5-.67-1.5-1.5S11.17 6.5 12 6.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm3.5 3c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
+              </svg>
+            </div>
+            <h3 class="focus-card-title">Graphic Design</h3>
+            <p class="focus-card-desc">
+              Visual publication design (banners, posters, flyers, logos) and
+              UI/UX work in Figma and Canva.
+            </p>
+            <div class="focus-card-tags">
+              <span class="focus-mini-tag">Figma</span>
+              <span class="focus-mini-tag">Canva</span>
+              <span class="focus-mini-tag">UI/UX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HIGHLIGHT SECTIONS / NAVIGATION OVERVIEW (EXPLORE FULL PROFILE) -->
+      <div class="section">
+        <div class="section-head">
+          <div class="eyebrow">quick links</div>
+          <h2>Explore the Full Profile</h2>
+        </div>
+        <div class="grid-3">
+          <a class="quick-link-card" href="#about">
+            <div class="quick-card-head">
+              <div class="quick-card-stamp">二</div>
+              <div class="quick-card-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3 class="quick-card-title">About Me</h3>
+            <p class="quick-card-desc">
+              Full profile, UNITAMA education record (GPA 3.88), and career
+              objectives.
+            </p>
+          </a>
+          <a class="quick-link-card" href="#skills">
+            <div class="quick-card-head">
+              <div class="quick-card-stamp">三</div>
+              <div class="quick-card-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3 class="quick-card-title">Technical Skills</h3>
+            <p class="quick-card-desc">
+              Skills across Programming, Data &amp; Analytics, GIS, Design,
+              and Productivity tools.
+            </p>
+          </a>
+          <a class="quick-link-card" href="#projects">
+            <div class="quick-card-head">
+              <div class="quick-card-stamp">四</div>
+              <div class="quick-card-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3 class="quick-card-title">Featured Projects</h3>
+            <p class="quick-card-desc">
+              5 real projects: EfficientNet-B0 ML, Tana Toraja WebGIS, HMI
+              website, coffee-app UI/UX, and QGIS mapping.
+            </p>
+          </a>
+        </div>
+      </div>
+      <section class="land-section" id="about">
+        <div class="section-head">
+          <div class="eyebrow">二 · About</div>
+          <h2 class="page-title">About <span class="accent">Me</span></h2>
+        </div>
+        <div class="section" style="margin-top: 20px">
+          <div class="about-profile-grid">
+            <!-- LEFT COLUMN: PROFILE PHOTO -->
+            <div class="profile-img-wrapper">
+              <img alt="Profile photo of Nara Puspitasari" class="profile-img" onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  " src="assets/profile/naraa (1).jpg" />
+              <div class="profile-img-placeholder" style="display: none">
+                <span style="font-size: 28px">👤</span>
+                <span style="font-weight: 700; color: var(--text)">Profile Photo</span>
+                <span style="font-size: 11px; color: var(--text-soft)"></span>
+                <span style="
+                      font-size: 10.5px;
+                      color: var(--text-dim);
+                      margin-top: 4px;
+                    ">// Add photo to assets/profile/</span>
+              </div>
+            </div>
+            <!-- RIGHT COLUMN: BIO & PROFILE INFO -->
+            <div class="card">
+              <div class="eyebrow">about me · professional profile</div>
+              <h2 style="
+                    font-size: 22px;
+                    margin-bottom: 6px;
+                    color: var(--text);
+                  ">
+                Nara Puspitasari, S.Kom
+              </h2>
+              <div style="
+                    color: var(--amber-soft);
+                    font-weight: 700;
+                    font-size: 14px;
+                    margin-bottom: 16px;
+                  ">
+                B.Sc. Informatics Engineering · Universitas Teknologi Akba
+                Makassar (UNITAMA)
+              </div>
+              <p style="
+                    color: var(--text-soft);
+                    font-size: 14.5px;
+                    line-height: 1.75;
+                    margin-bottom: 14px;
+                  ">
+                Informatics Engineering student at UNITAMA graduating with a
+                3.88/4.00 GPA, focused on Data Analysis, Data Science,
+                Front-End Development, WebGIS, and Graphic Design. Thesis
+                research applies deep learning (EfficientNet-B0) to tomato
+                leaf disease image classification, backed by hands-on
+                experience in web development, UI/UX, GIS, and
+                Python/TensorFlow.
+              </p>
+              <p style="
+                    color: var(--text-soft);
+                    font-size: 14.5px;
+                    line-height: 1.75;
+                    margin-bottom: 18px;
+                  ">
+                Brings an analytical, detail-oriented approach to every
+                project and picks up new tools quickly — reflected in
+                leadership roles across student organizations spanning
+                information management, communications, and publication
+                design.
+              </p>
+              <div style="
+                    background: var(--bg-soft);
+                    padding: 16px;
+                    border-radius: var(--radius-sm);
+                    border: 1px solid var(--line);
+                    font-size: 13.5px;
+                    line-height: 1.9;
+                  ">
+                <div>
+                  <span style="color: var(--amber); font-weight: 700">Education:</span>
+                  B.Sc. Informatics Engineering · UNITAMA
+                </div>
+                <div>
+                  <span style="color: var(--amber); font-weight: 700">GPA:</span>
+                  <strong style="color: var(--amber-soft)">3.88 / 4.00</strong>
+                </div>
+                <div>
+                  <span style="color: var(--amber); font-weight: 700">Location:</span>
+                  Makassar, South Sulawesi, Indonesia
+                </div>
+                <div>
+                  <span style="color: var(--amber); font-weight: 700">Email:</span>
+                  narapark878@gmail.com
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section" style="margin-top: 32px">
+          <div class="card" style="border-left: 3px solid var(--amber)">
+            <div class="eyebrow">career objective</div>
+            <h2 style="font-size: 18px; margin-bottom: 10px">
+              Career Objective
+            </h2>
+            <p style="color: var(--text); font-size: 15px; line-height: 1.7">
+              "To secure an entry-level role as a Data Analyst or Front-End
+              Developer, where I can apply Python, SQL, and web development
+              skills to turn data and design work into measurable results for
+              the team within my first year."
+            </p>
+          </div>
+        </div>
+        <div class="section" style="margin-top: 32px">
+          <div class="grid-2">
+            <!-- CAREER INTERESTS -->
+            <div class="card">
+              <div class="eyebrow">career interests</div>
+              <h2 style="font-size: 18px; margin-bottom: 14px">
+                Career Interests
+              </h2>
+              <div class="tag-row">
+                <span class="tag">Data Analyst</span>
+                <span class="tag">Data Science</span>
+                <span class="tag">Front-End Development</span>
+                <span class="tag">WebGIS</span>
+                <span class="tag">Graphic Design</span>
+              </div>
+            </div>
+            <!-- TECHNICAL INTERESTS -->
+            <div class="card">
+              <div class="eyebrow">technical interests</div>
+              <h2 style="font-size: 18px; margin-bottom: 14px">
+                Technical Interests
+              </h2>
+              <div class="tag-row">
+                <span class="tag">Python</span>
+                <span class="tag">TensorFlow / Keras</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">PHP</span>
+                <span class="tag">SQL</span>
+                <span class="tag">GIS / QGIS</span>
+                <span class="tag">UI/UX</span>
+                <span class="tag">Graphic Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="land-section" id="skills">
+        <div class="section-head">
+          <div class="eyebrow">三 · Skills</div>
+          <h2 class="page-title">
+            Technical <span class="accent">Skills</span>
+          </h2>
+        </div>
+        <p class="lede">
+          Languages, frameworks, and tools I work with, at an honest
+          proficiency level.
+        </p>
+        <div class="skills-category-group" style="margin-top: 32px">
+          <div class="skills-category-title">
+            <span>&lt;/&gt;</span> PROGRAMMING &amp; WEB DEVELOPMENT
+          </div>
+          <div class="skills-marquee-viewport">
+            <div class="skill-cards-grid" data-marquee-track>
+              <!-- Python -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path
+                      d="M63.5 12.5c-27 0-25.4 11.7-25.4 11.7l.1 12.1h25.8v3.6H27.5C12.4 39.9 12 50.8 12 63.8c0 14.8 10 14.4 10 14.4h6v-8.4c0-9.6 8.3-9.1 8.3-9.1h25.4c8 0 7.8-7.7 7.8-7.7V25.3c.1-12.8-6-12.8-6-12.8zm-14.3 7.7c2.4 0 4.4 2 4.4 4.4 0 2.4-2 4.4-4.4 4.4-2.4 0-4.4-2-4.4-4.4 0-2.4 2-4.4 4.4-4.4z"
+                      fill="#3776AB"></path>
+                    <path
+                      d="M64.5 115.5c27 0 25.4-11.7 25.4-11.7l-.1-12.1H64v-3.6h36.5c15.1 0 15.5-10.9 15.5-23.9 0-14.8-10-14.4-10-14.4h-6v8.4c0 9.6-8.3 9.1-8.3 9.1H46.3c-8 0-7.8 7.7-7.8 7.7v27.7c-.1 12.8 6 12.8 6 12.8zm14.3-7.7c-2.4 0-4.4-2-4.4-4.4 0-2.4 2-4.4 4.4-4.4 2.4 0 4.4 2 4.4 4.4 0 2.4-2 4.4-4.4 4.4z"
+                      fill="#FFD43B"></path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">Python</h3>
+                <span class="skill-item-category">Programming</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+              <!-- HTML -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path d="M18.8 11.5l8.8 98.7 36.4 10.1 36.4-10.1 8.8-98.7H18.8z" fill="#E34F26"></path>
+                    <path d="M64 111.9l29.7-8.2 7.7-86.4H64v94.6z" fill="#EF652A"></path>
+                    <path
+                      d="M64 53.6H46.4l-1.2-13.8H64V26.5H30.4l.6 6.8 3 34.1H64v-13.8zm0 30.6l-.1.1-13.8-3.7-.9-9.9H35.3l1.7 19.3 26.9 7.5.1-.1v-13.2z"
+                      fill="#FFF"></path>
+                    <path
+                      d="M64 53.6v13.8h16.4l-1.5 16.9-14.9 4v13.2l26.9-7.5 3.3-36.9H64zm0-27.1v13.3h32.4l.6-6.8.6-6.5H64z"
+                      fill="#EEE"></path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">HTML</h3>
+                <span class="skill-item-category">Web Development</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+              <!-- CSS -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path d="M18.8 11.5l8.8 98.7 36.4 10.1 36.4-10.1 8.8-98.7H18.8z" fill="#1572B6"></path>
+                    <path d="M64 111.9l29.7-8.2 7.7-86.4H64v94.6z" fill="#33A9DC"></path>
+                    <path
+                      d="M64 53.6H46.4l-1.2-13.8H64V26.5H30.4l.6 6.8 3 34.1H64v-13.8zm0 30.6l-.1.1-13.8-3.7-.9-9.9H35.3l1.7 19.3 26.9 7.5.1-.1v-13.2z"
+                      fill="#FFF"></path>
+                    <path
+                      d="M64 53.6v13.8h16.4l-1.5 16.9-14.9 4v13.2l26.9-7.5 3.3-36.9H64zm0-27.1v13.3h32.4l.6-6.8.6-6.5H64z"
+                      fill="#EEE"></path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">CSS</h3>
+                <span class="skill-item-category">Web Styling</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+              <!-- PHP -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <ellipse cx="64" cy="64" fill="#777BB4" rx="58" ry="34"></ellipse>
+                    <path
+                      d="M37.3 48.7h-9.2l-5.4 26.6h6.7l2.1-10.4h4.8c4.6 0 7.8-2.6 8.7-7.2.8-4.4-1.8-9-7.7-9zm-1.8 11.1h-4l1.3-6.1h3.9c2 0 3 1.1 2.6 2.8-.4 2.1-2.1 3.3-3.8 3.3zm25.9-11.1h-6.7l-2.4 11.6h-5.4l2.4-11.6h-6.7l-5.4 26.6h6.7l2.2-10.7h5.4l-2.2 10.7h6.7l5.4-26.6zm29 0h-9.2l-5.4 26.6h6.7l2.1-10.4h4.8c4.6 0 7.8-2.6 8.7-7.2.8-4.4-1.8-9-7.7-9zm-1.7 11.1h-4l1.3-6.1h3.9c2 0 3 1.1 2.6 2.8-.5 2.1-2.2 3.3-3.8 3.3z"
+                      fill="#FFF"></path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">PHP</h3>
+                <span class="skill-item-category">Backend Dev</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+              <!-- JavaScript -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path d="M0 0h128v128H0z" fill="#F7DF1E"></path>
+                    <path
+                      d="M67.3 104c3.3 5.4 7.6 9.4 15.2 9.4 6.4 0 10.5-3.2 10.5-7.7 0-5.3-4.2-7.3-11.3-10.4l-3.9-1.7c-11.3-4.8-18.7-10.9-18.7-23.7 0-12.8 10.2-22.6 26.5-22.6 11.5 0 19.3 4 24.6 13.4l-11.5 7.4c-2.9-4.8-6.1-7.1-11.7-7.1-5.3 0-8.9 3.2-8.9 7 0 4.8 3.2 6.8 9.9 9.7l3.9 1.7c13.7 5.9 20.3 11.9 20.3 24.6 0 14.8-11.4 23.9-28.7 23.9-16.1 0-25.5-7.6-30.8-17.6l12.1-6.3zm-39.7 1.4c2.6 4.3 5.9 7.8 11.9 7.8 6 0 9.7-2.4 9.7-11.7V49.2h15.5v52.6c0 17.5-10.2 24.8-24.8 24.8-12.8 0-20.9-6.3-25.1-15.7l12.8-7.5z"
+                      fill="#000"></path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">JavaScript</h3>
+                <span class="skill-item-category">Frontend Scripting</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-category-group">
+          <div class="skills-category-title">
+            <span>📊</span> DATA &amp; ANALYTICS
+          </div>
+          <div class="skills-marquee-viewport skills-marquee-viewport--reverse">
+            <div class="skill-cards-grid" data-marquee-track>
+              <!-- SQL -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path
+                      d="M64 14C35.3 14 12 21.6 12 31v66c0 9.4 23.3 17 52 17s52-7.6 52-17V31c0-9.4-23.3-17-52-17zm0 12c24 0 40 5.6 40 9s-16 9-40 9-40-5.6-40-9 16-9 40-9zm0 29c24 0 40 5.6 40 9s-16 9-40 9-40-5.6-40-9 16-9 40-9zm0 29c24 0 40 5.6 40 9s-16 9-40 9-40-5.6-40-9 16-9 40-9z"
+                      fill="#5FBFAE"></path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">SQL</h3>
+                <span class="skill-item-category">Database Queries</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+              <!-- Microsoft Excel -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path d="M74 14H16c-2.2 0-4 1.8-4 4v92c0 2.2 1.8 4 4 4h96c2.2 0 4-1.8 4-4V48L74 14z" fill="#107C41">
+                    </path>
+                    <path d="M74 14v34h42L74 14z" fill="#1F9A55"></path>
+                    <path d="M38 48l12.5 22L37 92h14l6-12.5 6 12.5h14L63 70l12-22H62l-5.5 11.5L51 48H38z" fill="#FFF">
+                    </path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">Microsoft Excel</h3>
+                <span class="skill-item-category">Data Processing</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+              <!-- Basic Machine Learning -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path d="M64 12a52 52 0 100 104 52 52 0 000-104zm0 16a36 36 0 110 72 36 36 0 010-72z"
+                      fill="#8FDCCE"></path>
+                    <circle cx="64" cy="64" fill="#F4C374" r="16"></circle>
+                    <circle cx="64" cy="32" fill="#5FBFAE" r="6"></circle>
+                    <circle cx="64" cy="96" fill="#5FBFAE" r="6"></circle>
+                    <circle cx="32" cy="64" fill="#5FBFAE" r="6"></circle>
+                    <circle cx="96" cy="64" fill="#5FBFAE" r="6"></circle>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">Basic Machine Learning</h3>
+                <span class="skill-item-category">AI &amp; Data Science</span>
+                <span class="level-badge familiar">Familiar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-category-group">
+          <div class="skills-category-title">
+            <span>🌎</span> GIS &amp; MAPPING
+          </div>
+          <div class="skills-marquee-viewport">
+            <div class="skill-cards-grid" data-marquee-track>
+              <!-- QGIS -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <circle cx="64" cy="64" fill="#589632" r="56"></circle>
+                    <path d="M64 24a40 40 0 100 80 40 40 0 000-80zm0 16a24 24 0 110 48 24 24 0 010-48z" fill="#FFF">
+                    </path>
+                    <path d="M76 76l24 24-12 12-24-24z" fill="#93B023"></path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">QGIS</h3>
+                <span class="skill-item-category">Spatial Software</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+              <!-- GIS -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path
+                      d="M64 12C41.9 12 24 29.9 24 52c0 30 40 64 40 64s40-34 40-64c0-22.1-17.9-40-40-40zm0 54c-7.7 0-14-6.3-14-14s6.3-14 14-14 14 6.3 14 14-6.3 14-14 14z"
+                      fill="#5FBFAE"></path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">GIS</h3>
+                <span class="skill-item-category">Geospatial System</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+              <!-- WebGIS -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path d="M64 16l44 24v48L64 112 20 88V40l44-24zm0 16L36 48l28 16 28-16-28-16z" fill="#E8A33D">
+                    </path>
+                    <path d="M36 56v24l28 16V80L36 56zm56 0L64 80v16l28-16V56z" fill="#F4C374"></path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">WebGIS</h3>
+                <span class="skill-item-category">Interactive Mapping</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-category-group">
+          <div class="skills-category-title">
+            <span>🎨</span> UI/UX &amp; DESIGN
+          </div>
+          <div class="skills-marquee-viewport skills-marquee-viewport--reverse">
+            <div class="skill-cards-grid" data-marquee-track>
+              <!-- UI/UX -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path
+                      d="M16 24h96c4.4 0 8 3.6 8 8v64c0 4.4-3.6 8-8 8H16c-4.4 0-8-3.6-8-8V32c0-4.4 3.6-8 8-8zm0 16v48h96V40H16z"
+                      fill="#8FDCCE"></path>
+                    <circle cx="28" cy="32" fill="#E8A33D" r="4"></circle>
+                    <circle cx="40" cy="32" fill="#F4C374" r="4"></circle>
+                    <circle cx="52" cy="32" fill="#5FBFAE" r="4"></circle>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">UI/UX</h3>
+                <span class="skill-item-category">User Interface</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+              <!-- Figma -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path d="M43 43c0-11.6 9.4-21 21-21h21v21H64c0 11.6-9.4 21-21 21z" fill="#F24E1E"></path>
+                    <path d="M64 22h21c11.6 0 21 9.4 21 21s-9.4 21-21 21H64V22z" fill="#FF7262"></path>
+                    <path d="M64 64h21c11.6 0 21 9.4 21 21s-9.4 21-21 21H64V64z" fill="#A259FF"></path>
+                    <path d="M43 106c0-11.6 9.4-21 21-21v21c0 11.6-9.4 21-21 21s-21-9.4-21-21z" fill="#0ACF83"></path>
+                    <path d="M43 64c11.6 0 21-9.4 21-21H43c-11.6 0-21 9.4-21 21s9.4 21 21 21z" fill="#1ABCFE"></path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">Figma</h3>
+                <span class="skill-item-category">Design Tool</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+              <!-- Canva -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <circle cx="64" cy="64" fill="#00C4CC" r="56"></circle>
+                    <path
+                      d="M64 28C44.1 28 28 44.1 28 64s16.1 36 36 36 36-16.1 36-36-16.1-36-36-36zm-8 52c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16z"
+                      fill="#FFF"></path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">Canva</h3>
+                <span class="skill-item-category">Graphic Content</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+              <!-- Graphic Design -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path d="M32 96l64-64 16 16-64 64H32V96zm64-76l12-12 16 16-12 12-16-16z" fill="#E8A33D"></path>
+                    <path d="M20 108l24-8-16-16-8 24z" fill="#F4C374"></path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">Graphic Design</h3>
+                <span class="skill-item-category">Visual Media</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+              <!-- Web Design -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path
+                      d="M16 20h96c4.4 0 8 3.6 8 8v72c0 4.4-3.6 8-8 8H16c-4.4 0-8-3.6-8-8V28c0-4.4 3.6-8 8-8zm0 24v56h96V44H16z"
+                      fill="#5FBFAE"></path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">Web Design</h3>
+                <span class="skill-item-category">Website Layout</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+              <!-- Content Design -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path d="M24 32h80v64H24V32zm16 16v32h48V48H40z" fill="#F4C374"></path>
+                    <circle cx="48" cy="32" fill="#E8A33D" r="6"></circle>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">Content Design</h3>
+                <span class="skill-item-category">Social Media Design</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-category-group">
+          <div class="skills-category-title">
+            <span>📄</span> PRODUCTIVITY &amp; DOCUMENTATION
+          </div>
+          <div class="skills-marquee-viewport">
+            <div class="skill-cards-grid" data-marquee-track>
+              <!-- Microsoft Word -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path d="M74 14H16c-2.2 0-4 1.8-4 4v92c0 2.2 1.8 4 4 4h96c2.2 0 4-1.8 4-4V48L74 14z" fill="#185ABD">
+                    </path>
+                    <path d="M74 14v34h42L74 14z" fill="#2B7CD3"></path>
+                    <path d="M36 48l8 44h11l7-30 7 30h11l8-44H75l-4 28-7-28H51l-7 28-4-28H36z" fill="#FFF"></path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">Microsoft Word</h3>
+                <span class="skill-item-category">Word Processing</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+              <!-- Microsoft Excel -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path d="M74 14H16c-2.2 0-4 1.8-4 4v92c0 2.2 1.8 4 4 4h96c2.2 0 4-1.8 4-4V48L74 14z" fill="#107C41">
+                    </path>
+                    <path d="M74 14v34h42L74 14z" fill="#1F9A55"></path>
+                    <path d="M38 48l12.5 22L37 92h14l6-12.5 6 12.5h14L63 70l12-22H62l-5.5 11.5L51 48H38z" fill="#FFF">
+                    </path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">Microsoft Excel</h3>
+                <span class="skill-item-category">Spreadsheet &amp; Data</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+              <!-- Microsoft PowerPoint -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path d="M74 14H16c-2.2 0-4 1.8-4 4v92c0 2.2 1.8 4 4 4h96c2.2 0 4-1.8 4-4V48L74 14z" fill="#D04423">
+                    </path>
+                    <path d="M74 14v34h42L74 14z" fill="#ED6C47"></path>
+                    <path
+                      d="M38 48h18c8.8 0 16 7.2 16 16s-7.2 16-16 16H48v12H38V48zm10 10v12h8c3.3 0 6-2.7 6-6s-2.7-6-6-6h-8z"
+                      fill="#FFF"></path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">Microsoft PowerPoint</h3>
+                <span class="skill-item-category">Presentation</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+              <!-- Document Formatting -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path d="M24 20h80v88H24V20zm16 16v8h48v-8H40zm0 24v8h48v-8H40zm0 24v8h32v-8H40z" fill="#8FDCCE">
+                    </path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">Document Formatting</h3>
+                <span class="skill-item-category">Office Standards</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+              <!-- Data Entry & Documentation -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path d="M32 24h64v80H32V24zm16 16v8h32v-8H48zm0 20v8h32v-8H48zm0 20v8h20v-8H48z" fill="#E8A33D">
+                    </path>
+                    <circle cx="38" cy="44" fill="#5FBFAE" r="4"></circle>
+                    <circle cx="38" cy="64" fill="#5FBFAE" r="4"></circle>
+                    <circle cx="38" cy="84" fill="#5FBFAE" r="4"></circle>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">Data Entry &amp; Documentation</h3>
+                <span class="skill-item-category">Record Keeping</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-category-group">
+          <div class="skills-category-title">
+            <span>🔧</span> TOOLS &amp; VERSION CONTROL
+          </div>
+          <div class="skills-marquee-viewport skills-marquee-viewport--reverse">
+            <div class="skill-cards-grid" data-marquee-track>
+              <!-- Git -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path
+                      d="M120.7 57.3L70.7 7.3c-3.6-3.6-9.4-3.6-13 0L37.1 27.9l16.4 16.4c3.8-1.3 8.3-.4 11.3 2.6 3.1 3.1 3.9 7.6 2.5 11.4l15.7 15.7c3.8-1.4 8.3-.5 11.4 2.6 4.3 4.3 4.3 11.3 0 15.6-4.3 4.3-11.3 4.3-15.6 0-3.3-3.3-4.1-8.2-2.4-12.2L61.6 65.2V88c1.7 1 3.1 2.5 3.9 4.4 2.6 5.6.2 12.3-5.4 14.9-5.6 2.6-12.3.2-14.9-5.4-2.6-5.6-.2-12.3 5.4-14.9 1.8-.8 3.7-1.1 5.6-1V63.9l-18-18L7.3 76.9c-3.6 3.6-3.6 9.4 0 13l50 50c3.6 3.6 9.4 3.6 13 0l50.4-50.4c3.6-3.6 3.6-9.4 0-12.2z"
+                      fill="#F05032"></path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">Git</h3>
+                <span class="skill-item-category">Version Control</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+              <!-- GitHub -->
+              <div class="skill-card-item">
+                <div aria-hidden="true" class="skill-icon">
+                  <svg viewbox="0 0 128 128">
+                    <path
+                      d="M64 8C33.1 8 8 33.1 8 64c0 24.7 16.1 45.7 38.3 53.1 2.8.5 3.8-1.2 3.8-2.7 0-1.3-.1-5.7-.1-10.4-15.5 3.4-18.8-6.6-18.8-6.6-2.5-6.4-6.2-8.1-6.2-8.1-5.1-3.5.4-3.4.4-3.4 5.6.4 8.6 5.8 8.6 5.8 5 8.6 13.1 6.1 16.3 4.7.5-3.6 2-6.1 3.6-7.5-12.4-1.4-25.4-6.2-25.4-27.6 0-6.1 2.2-11.1 5.8-15-0.6-1.4-2.5-7.1.6-14.8 0 0 4.7-1.5 15.4 5.7 4.5-1.2 9.3-1.9 14.1-1.9s9.6.6 14.1 1.9c10.7-7.3 15.4-5.7 15.4-5.7 3.1 7.7 1.2 13.4.6 14.8 3.6 3.9 5.8 8.9 5.8 15 0 21.5-13.1 26.2-25.5 27.6 2 1.7 3.8 5.2 3.8 10.4 0 7.5-.1 13.6-.1 15.5 0 1.5 1 3.3 3.8 2.7C103.9 109.7 120 88.7 120 64 120 33.1 94.9 8 64 8z"
+                      fill="#EDEEF5"></path>
+                  </svg>
+                </div>
+                <h3 class="skill-item-title">GitHub</h3>
+                <span class="skill-item-category">Code Repository</span>
+                <span class="level-badge intermediate">Intermediate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- // PROJECTS -->
+      <section class="land-section" id="projects">
+        <div class="section-head">
+          <div class="eyebrow">四 · Projects</div>
+          <h2 class="page-title">
+            Selected <span class="accent">Projects</span>
+          </h2>
+        </div>
+        <p class="lede">
+          8 projects spanning Machine Learning / Computer Vision, WebGIS, Web
+          Development, UI/UX Design, and QGIS spatial mapping.
+        </p>
+        <div class="section" style="margin-top: 32px">
+
+          <!-- PROJECT 01 -->
+          <div class="project-card featured">
+            <div class="featured-header-badge">Featured — WebGIS &amp; Mapping</div>
+            <div class="project-image-wrapper">
+              <img alt="Preview of the Tana Toraja Tourism WebGIS project" class="project-img" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                src="assets/projects/toraja.jpeg" />
+              <div class="project-img-placeholder" style="display: none">
+                <span>🗺️ WebGIS Tana Toraja</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-number">Project 01 — WebGIS &amp; Web Development</div>
+              <h3>Tana Toraja Tourism WebGIS</h3>
+              <p>
+                Tourists visiting Tana Toraja often struggle to find nearby
+                destinations without scattered, offline information sources. Built
+                a WebGIS platform with an interactive map, destination search, and
+                detailed location pages to solve this. Implemented the Haversine
+                formula for proximity analysis, letting users instantly find the
+                closest attractions to their location.
+              </p>
+              <div class="project-meta-item">
+                <div class="project-meta-label">Tech Stack</div>
+                <div class="tag-row">
+                  <span class="tag">PHP</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Leaflet</span>
+                  <span class="tag">GIS</span>
+                  <span class="tag">LBS</span>
+                  <span class="tag">Haversine Formula</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="https://github.com/Narapuspitasari/tana-toraja-wisata.git" rel="noopener"
+                  target="_blank">GitHub Profile</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 02 -->
+          <div class="project-card featured">
+            <div class="featured-header-badge">Featured — Machine Learning / Thesis</div>
+            <div class="project-image-wrapper">
+              <img alt="Preview of the tomato leaf disease classification thesis project" class="project-img"
+                loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                src="assets/projects/tomat.png" />
+              <div class="project-img-placeholder" style="display: none">
+                <span>🍅 Tomato Leaf Classification</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-number">Project 02 — Machine Learning &amp; Computer Vision</div>
+              <h3>Tomato Leaf Disease Classification with EfficientNet-B0</h3>
+              <p>
+                Manually identifying tomato leaf diseases is slow and error-prone
+                for farmers, risking crop loss from late detection. Thesis
+                research addresses this by fine-tuning EfficientNet-B0 in Python
+                and TensorFlow/Keras, using transfer learning and data
+                augmentation to classify disease categories from leaf images,
+                achieving 98% accuracy on the test set.
+              </p>
+              <div class="project-meta-item">
+                <div class="project-meta-label">Tech Stack</div>
+                <div class="tag-row">
+                  <span class="tag">Python</span>
+                  <span class="tag">TensorFlow / Keras</span>
+                  <span class="tag">EfficientNet-B0</span>
+                  <span class="tag">Machine Learning</span>
+                  <span class="tag">Computer Vision</span>
+                  <span class="tag">Data Augmentation</span>
+                  <span class="tag">Fine-Tuning</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="https://sunny-melomakarona-eabd7c.netlify.app/" target="_blank">View
+                  Demo</a>
+                <a class="project-link" href="https://github.com/Narapuspitasari/skripsi123.git" rel="noopener"
+                  target="_blank">GitHub Profile</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 03 -->
+          <div class="project-card">
+            <div class="project-image-wrapper">
+              <img alt="Preview of the HMI Unitama Chapter website" class="project-img" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                src="assets/projects/hmi.jpeg" />
+              <div class="project-img-placeholder" style="display: none">
+                <span>🌐 HMI Unitama Website</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-number">Project 03 — Web Development / Organization</div>
+              <h3>HMI Unitama Chapter Website</h3>
+              <p>
+                HMI Unitama Chapter lacked a central, organized place to publish
+                updates and documentation, relying on scattered social posts.
+                Designed and built the official website as a single information,
+                publication, and documentation hub for the organization.
+              </p>
+              <div class="project-meta-item">
+                <div class="project-meta-label">Features</div>
+                <div class="feature-list">
+                  <div class="feature-item">Homepage &amp; organization profile.</div>
+                  <div class="feature-item">Leadership structure &amp; work programs.</div>
+                  <div class="feature-item">Activity gallery &amp; contact form.</div>
+                </div>
+              </div>
+              <div class="project-meta-item">
+                <div class="project-meta-label">Tech Stack</div>
+                <div class="tag-row">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Web Design</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="https://github.com/Narapuspitasari" rel="noopener" target="_blank">GitHub
+                  Repository</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 04 -->
+          <div class="project-card">
+            <div class="project-image-wrapper">
+              <img alt="Preview of the AESTHETIC graduation photography website" class="project-img" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                src="assets/projects/fotografi.png" />
+              <div class="project-img-placeholder" style="display: none">
+                <span>📷 AESTHETIC — Photography Website</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-number">Project 04 — Web Design / Web Development</div>
+              <h3>AESTHETIC — Graduation Photography Website</h3>
+              <p>
+                Graduation photo studios often present their packages, pricing,
+                and booking process in a scattered, generic way, making it hard
+                for clients to understand the process before committing. Designed
+                a one-page website for AESTHETIC, a graduation photoshoot concept
+                under Fatrah Fotograf studio in Palembang, presenting the brand's
+                story-led concept alongside a clear pricelist and booking flow to
+                guide clients from browsing to confirmed booking.
+              </p>
+              <div class="project-meta-item">
+                <div class="project-meta-label">Features</div>
+                <div class="feature-list">
+                  <div class="feature-item">Brand story hero section ("Be Your Own Story").</div>
+                  <div class="feature-item">Package &amp; pricelist (Single, Family, Couple, Group, Studio, Cinematic).
+                  </div>
+                  <div class="feature-item">5-step booking flow: consultation, schedule, payment, raw file, edited file.
+                  </div>
+                  <div class="feature-item">Portfolio gallery &amp; contact section (WhatsApp, Instagram, email).</div>
+                </div>
+              </div>
+              <div class="project-meta-item">
+                <div class="project-meta-label">Tech Stack</div>
+                <div class="tag-row">
+                  <!-- TODO: confirm actual stack — HTML/CSS/JS, or is this a Figma design? -->
+                  <span class="tag">Web Design</span>
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+
+                </div>
+              </div>
+              <div class="project-links">
+                <!-- TODO: add real demo/GitHub/Figma link -->
+                <a class="project-link" href="https://aestheticphoto.netlify.app/" rel="noopener" target="_blank">View
+                  Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 05 -->
+          <div class="project-card">
+            <div class="project-image-wrapper">
+              <img alt="Preview of the coffee ordering app UI/UX design" class="project-img" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                src="assets/projects/Group 79.png" />
+              <div class="project-img-placeholder" style="display: none">
+                <span>☕ Coffee Ordering App UI/UX</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-number">Project 05 — UI/UX Design</div>
+              <h3>Coffee Ordering App UI/UX</h3>
+              <p>
+                Designed a coffee ordering app prototype in Figma, applying
+                user-centered design principles to guide a first-time user
+                smoothly from browsing to checkout.
+              </p>
+              <div class="project-meta-item">
+                <div class="project-meta-label">Prototype Features</div>
+                <div class="feature-list">
+                  <div class="feature-item">User registration &amp; login.</div>
+                  <div class="feature-item">Product catalog &amp; shopping cart.</div>
+                  <div class="feature-item">Checkout flow, order tracking, profile, &amp; favorites.</div>
+                </div>
+              </div>
+              <div class="project-meta-item">
+                <div class="project-meta-label">Tech Stack</div>
+                <div class="tag-row">
+                  <span class="tag">Figma</span>
+                  <span class="tag">UI/UX</span>
+                  <span class="tag">User-Centered Design</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <a class="project-link"
+                  href="https://www.figma.com/design/uqli9gwRT5LIXXe47Z4Qbx/UI-UX-Kopi-Oguud?node-id=0-1&t=VRvEW7p4DASrK41T-1"
+                  rel="noopener" target="_blank">View Prototype</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 06 -->
+          <div class="project-card">
+            <div class="project-image-wrapper">
+              <img alt="Preview of the Receplicious recipe app UI/UX design" class="project-img" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                src="assets/projects/Recep.png" />
+              <div class="project-img-placeholder" style="display: none">
+                <span>🍳 Receplicious</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-number">Project 06 — UI/UX Design</div>
+              <h3>Receplicious — Resep Makanan</h3>
+              <p>
+                Home cooks often struggle to discover, save, and organize recipes
+                they want to try, with inspiration scattered across different
+                apps and platforms. Designed a recipe-sharing app prototype in
+                Figma that lets users browse recipes by category, search with
+                popular suggestions, follow other cooks, and upload their own
+                recipes.
+              </p>
+              <div class="project-meta-item">
+                <div class="project-meta-label">Prototype Features</div>
+                <div class="feature-list">
+                  <div class="feature-item">Recipe browsing by category (Breakfast, Lunch, Dessert) with ratings &amp;
+                    location tags.</div>
+                  <div class="feature-item">User profile with recipe count, followers/following, and recipe grid.</div>
+                  <div class="feature-item">Recipe search with popular search suggestions.</div>
+                  <div class="feature-item">Add Recipe flow with photo, short video upload, title &amp; ingredients.
+                  </div>
+                </div>
+              </div>
+              <div class="project-meta-item">
+                <div class="project-meta-label">Tech Stack</div>
+                <div class="tag-row">
+                  <span class="tag">Figma</span>
+                  <span class="tag">UI/UX</span>
+                  <span class="tag">User-Centered Design</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <!-- TODO: add real Figma prototype link -->
+                <a class="project-link"
+                  href="https://www.figma.com/design/6u7nhFutMxT1ysTtlVmAKh/UI-UX?node-id=0-1&t=SuLqjYvly1G3gFtR-1"
+                  rel="noopener" target="_blank">View Prototype</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 07 -->
+          <div class="project-card">
+            <div class="project-image-wrapper">
+              <img alt="Preview of the money management app UI/UX design" class="project-img" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                src="assets/projects/money.png" />
+              <div class="project-img-placeholder" style="display: none">
+                <span>💰 Money Management App UI/UX</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-number">Project 07 — UI/UX Design</div>
+              <h3>Money Management App UI/UX</h3>
+              <p>
+                Many people find it hard to track their daily income and expenses
+                or understand where their money actually goes. Designed a
+                personal finance app prototype in Figma that helps users log
+                transactions and visualize their spending habits at a glance.
+              </p>
+              <div class="project-meta-item">
+                <div class="project-meta-label">Prototype Features</div>
+                <div class="feature-list">
+                  <div class="feature-item">Home dashboard with balance, income/expense summary &amp; recent
+                    transactions.</div>
+                  <div class="feature-item">Monthly report with expense breakdown by category and weekly overview chart.
+                  </div>
+                  <div class="feature-item">Add Transaction flow with expense/income toggle, category, amount &amp;
+                    note.</div>
+                  <div class="feature-item">Profile &amp; settings screen (dark mode, language, notifications).</div>
+                </div>
+              </div>
+              <div class="project-meta-item">
+                <div class="project-meta-label">Tech Stack</div>
+                <div class="tag-row">
+                  <span class="tag">Figma</span>
+                  <span class="tag">UI/UX</span>
+                  <span class="tag">User-Centered Design</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <!-- TODO: add real Figma prototype link -->
+                <a class="project-link"
+                  href="https://www.figma.com/design/6u7nhFutMxT1ysTtlVmAKh/UI-UX?node-id=358-2013&t=SuLqjYvly1G3gFtR-1"
+                  rel="noopener" target="_blank">View Prototype</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 08 -->
+          <div class="project-card">
+            <div class="project-image-wrapper">
+              <img alt="Preview of the Bonto-Bontoa Village administrative map" class="project-img" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                src="assets/projects/peta.png" />
+              <div class="project-img-placeholder" style="display: none">
+                <span>🗺️ Bonto-Bontoa Village Map</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-number">Project 08 — GIS &amp; Mapping / Community Service</div>
+              <h3>Bonto-Bontoa Village Administrative Map</h3>
+              <p>
+                Bonto-Bontoa Village needed an accurate administrative map to
+                support local planning. During a university community-service
+                placement, processed and visualized spatial data in QGIS —
+                village boundaries, road networks, rivers, and public facilities
+                — producing a reference map for village administration.
+              </p>
+              <div class="project-meta-item">
+                <div class="project-meta-label">Tech Stack</div>
+                <div class="tag-row">
+                  <span class="tag">QGIS</span>
+                  <span class="tag">GIS</span>
+                  <span class="tag">Spatial Data</span>
+                  <span class="tag">Cartography</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="https://github.com/Narapuspitasari/QGIS.git" target="_blank">Map Details
+                  on Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- GRAPHIC DESIGN — pamflet, poster, banner, spanduk (sliding gallery) -->
+          <div class="design-gallery">
+            <div class="design-gallery-head">
+              <div class="design-gallery-eyebrow">四 · Projects — Graphic Design</div>
+              <h3 class="design-gallery-title">
+                Graphic <span class="accent">Design</span>
+              </h3>
+              <p class="design-gallery-lede">
+                Pamphlets, posters, banners, and spanduk designed for organizational
+                announcements, achievements, and events — drag or use the arrows to
+                browse.
+              </p>
+            </div>
+
+            <div class="design-slider">
+              <button aria-label="Previous design" class="design-slider-btn design-slider-prev" type="button">
+                ‹
+              </button>
+              <div class="design-slider-track" id="designSliderTrack">
+
+                <!-- ==================== HMI ==================== -->
+
+                <!-- HMI 01 -->
+
+
+                <!-- HMI 02 -->
+                <div class="design-slide">
+                  <img alt="Organizational training announcement design" loading="lazy"
+                    src="assets/desain-project/hmi/a1 (12).png" />
+                </div>
+
+                <!-- HMI 03 -->
+
+                <!-- HMI 05 -->
+                <div class="design-slide">
+                  <img alt="Public information and disaster awareness poster" loading="lazy"
+                    src="assets/desain-project/hmi/a1 (17).png" />
+                </div>
+
+                <!-- HMI 06 -->
+                <div class="design-slide">
+                  <img alt="Islamic New Year celebration design" loading="lazy"
+                    src="assets/desain-project/hmi/a1 (18).png" />
+                </div>
+
+                <!-- HMI 07 -->
+                <div class="design-slide">
+                  <img alt="Eid al-Adha celebration poster design" loading="lazy"
+                    src="assets/desain-project/hmi/a1 (19).png" />
+                </div>
+
+                <div class="design-slide">
+                  <img alt="International Workers Day poster design" loading="lazy"
+                    src="assets/desain-project/hmi/a1 (21).png" />
+                </div>
+
+                <!-- HMI 10 -->
+                <div class="design-slide">
+                  <img alt="National Education Day celebration design" loading="lazy"
+                    src="assets/desain-project/hmi/a1 (22).png" />
+                </div>
+
+                <!-- HMI 11 -->
+                <div class="design-slide">
+                  <img alt="Pancasila Day celebration poster design" loading="lazy"
+                    src="assets/desain-project/hmi/a1 (23).png" />
+                </div>
+
+                <div class="design-slide">
+                  <img alt="Pray for NTT solidarity poster design" loading="lazy"
+                    src="assets/desain-project/hmi/a1 (14).png" />
+                </div>
+
+                <!-- HMI 04 -->
+                <div class="design-slide">
+                  <img alt="Police law and institutional reform information poster" loading="lazy"
+                    src="assets/desain-project/hmi/a1 (15).png" />
+                </div>
+
+                <!-- HMI 08 -->
+                <div class="design-slide">
+                  <img alt="Personal quote and campaign poster design" loading="lazy"
+                    src="assets/desain-project/hmi/a1 (20).png" />
+                </div>
+
+                <!-- HMI 09 -->
+
+                <div class="design-slide">
+                  <img alt="Leadership training announcement design" loading="lazy"
+                    src="assets/desain-project/hmi/a1 (11).png" />
+                </div>
+
+
+                <!-- ==================== HPMM ==================== -->
+
+                <!-- HPMM 01 -->
+                <div class="design-slide">
+                  <img alt="HPMM organizational design" loading="lazy" src="assets/desain-project/hpmm/a (2).png" />
+                </div>
+
+                <!-- HPMM 02 -->
+                <div class="design-slide">
+                  <img alt="HPMM organizational design" loading="lazy" src="assets/desain-project/hpmm/a (4).png" />
+                </div>
+
+                <!-- HPMM 03 -->
+                <div class="design-slide">
+                  <img alt="HPMM organizational design" loading="lazy" src="assets/desain-project/hpmm/a (5).png" />
+                </div>
+
+                <!-- HPMM 04 -->
+                <div class="design-slide">
+                  <img alt="HPMM organizational design" loading="lazy" src="assets/desain-project/hpmm/a (6).png" />
+                </div>
+
+                <!-- HPMM 05 -->
+                <div class="design-slide">
+                  <img alt="Organizational congratulations design" loading="lazy"
+                    src="assets/desain-project/hpmm/a1 (1).png" />
+                </div>
+
+                <!-- HPMM 06 -->
+                <div class="design-slide">
+                  <img alt="Suara HARI INI organizational publication design" loading="lazy"
+                    src="assets/desain-project/hpmm/a1 (2).png" />
+                </div>
+
+                <!-- HPMM 07 -->
+                <div class="design-slide">
+                  <img alt="Youth Pledge Day event poster design" loading="lazy"
+                    src="assets/desain-project/hpmm/a1 (4).png" />
+                </div>
+
+                <!-- HPMM 08 -->
+                <div class="design-slide">
+                  <img alt="Labor Day celebration poster design" loading="lazy"
+                    src="assets/desain-project/hpmm/a1 (5).png" />
+                </div>
+
+                <!-- HPMM 09 -->
+                <div class="design-slide">
+                  <img alt="National Education Day poster design" loading="lazy"
+                    src="assets/desain-project/hpmm/a1 (6).png" />
+                </div>
+
+                <!-- HPMM 10 -->
+                <div class="design-slide">
+                  <img alt="Pancasila Day poster design" loading="lazy" src="assets/desain-project/hpmm/a1 (7).png" />
+                </div>
+
+                <!-- HPMM 11 -->
+                <div class="design-slide">
+                  <img alt="Kartini Day celebration poster design" loading="lazy"
+                    src="assets/desain-project/hpmm/a1 (8).png" />
+                </div>
+
+                <!-- HPMM 12 -->
+                <div class="design-slide">
+                  <img alt="Islamic New Year celebration poster design" loading="lazy"
+                    src="assets/desain-project/hpmm/a1 (9).png" />
+                </div>
+
+                <!-- HPMM 13 -->
+                <div class="design-slide">
+                  <img alt="National Children's Day poster design" loading="lazy"
+                    src="assets/desain-project/hpmm/a1 (10).png" />
+                </div>
+
+                <!-- HPMM 14 -->
+                <div class="design-slide">
+                  <img alt="Organizational management design" loading="lazy"
+                    src="assets/desain-project/hpmm/a1 (13).png" />
+                </div>
+
+                <!-- HPMM 15 -->
+                <div class="design-slide">
+                  <img alt="Organizational event design" loading="lazy" src="assets/desain-project/hpmm/a1 (16).png" />
+                </div>
+
+                <!-- HPMM 16 -->
+                <div class="design-slide">
+                  <img alt="Leadership follow-up event poster design" loading="lazy"
+                    src="assets/desain-project/hpmm/a1 (26).png" />
+                </div>
+
+                <!-- HPMM 17 -->
+                <div class="design-slide">
+                  <img alt="Organizational plenary meeting presentation design" loading="lazy"
+                    src="assets/desain-project/hpmm/a1 (30).png" />
+                </div>
+
+                <!-- HPMM 18 -->
+                <div class="design-slide">
+                  <img alt="Instagram story design" loading="lazy"
+                    src="assets/desain-project/hpmm/Instagram story - 2.png" />
+                </div>
+
+              </div>
+              <button aria-label="Next design" class="design-slider-btn design-slider-next" type="button">
+              </button>
+            </div>
+            <div class="design-slider-dots" id="designSliderDots"></div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- EXPERIENCE -->
+      <section class="land-section" id="experience">
+        <div class="section-head">
+          <div class="eyebrow">五 · Experience</div>
+          <h2 class="page-title">
+            Work &amp; Design <span class="accent">Experience</span>
+          </h2>
+        </div>
+        <p class="lede">
+          A track record of professional work and visual design for
+          organizations and business clients.
+        </p>
+        <div class="section" style="margin-top: 36px">
+          <div class="timeline">
+            <!-- EXPERIENCE 01 -->
+            <div class="t-item">
+              <div class="when">August 2025 – June 2026</div>
+              <h3>Graphic Designer</h3>
+              <div class="org">
+                HPMM (Himpunan Pelajar Mahasiswa Massenrempulu)
+              </div>
+              <p style="margin-top: 8px">
+                Designed 15+ event flyers, banners, and
+                publication assets across 2+ organizational
+                events, aligning each with its theme and brand identity.
+                Coordinated directly with committee members to keep visual
+                communication clear and on-brand.
+              </p>
+            </div>
+            <!-- EXPERIENCE 02 -->
+            <div class="t-item">
+              <div class="when">November 2025</div>
+              <h3>Graphic Designer</h3>
+              <div class="org">AJE FARM</div>
+              <p style="margin-top: 8px">
+                Designed a complete logo and visual identity — concept, color
+                palette, and typography — for a poultry business, delivered to
+                the owner's brand requirements [add turnaround time if
+                available, e.g. within 2 weeks].
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="land-section" id="education">
+        <div class="section-head">
+          <div class="eyebrow">六 · Education</div>
+          <h2 class="page-title"><span class="accent">Education</span></h2>
+        </div>
+        <p class="lede">
+          Formal education completed at Universitas Teknologi Akba Makassar.
+        </p>
+        <div class="section" style="margin-top: 36px">
+          <div class="timeline">
+            <div class="t-item">
+              <div class="when">
+                2022 – 2026 ·
+                <span style="color: var(--amber); font-weight: 700">GPA: 3.88 / 4.00</span>
+              </div>
+              <h3>Universitas Teknologi Akba Makassar (UNITAMA)</h3>
+              <div class="org">B.Sc. Informatics Engineering</div>
+              <p style="margin-top: 8px">
+                Informatics Engineering student focused on software
+                development, web development, databases, WebGIS, machine
+                learning, and information technology.
+              </p>
+              <p style="
+                    margin-top: 8px;
+                    color: var(--amber-soft);
+                    font-weight: 700;
+                  ">
+                Thesis: Tomato Leaf Disease Classification using
+                EfficientNet-B0 (Python, TensorFlow/Keras)
+              </p>
+              <p style="
+                    margin-top: 4px;
+                    color: var(--text-soft);
+                    font-size: 13.5px;
+                  ">
+                Relevant coursework: Web Development, Database Systems, GIS,
+                Machine Learning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="land-section" id="organization">
+        <div class="section-head">
+          <div class="eyebrow">七 · Organization</div>
+          <h2 class="page-title">
+            Organizational <span class="accent">Experience</span>
+          </h2>
+        </div>
+        <p class="lede">
+          Leadership, management responsibilities, and contributions within
+          student organizations.
+        </p>
+        <div class="section" style="margin-top: 36px">
+          <div class="timeline">
+            <!-- ROLE 01 -->
+            <div class="t-item">
+              <div class="when">2024-2025</div>
+              <h3>Head of Information &amp; Communication Network</h3>
+              <div class="org">
+                HPMM Kom. UIM (Himpunan Pelajar Mahasiswa Massenrempulu)
+              </div>
+              <div style="
+                    margin-top: 8px;
+                    color: var(--text-soft);
+                    font-size: 14.5px;
+                  ">
+                <div style="
+                      color: var(--amber-soft);
+                      font-weight: 700;
+                      margin-bottom: 4px;
+                    ">
+                  Key Contributions
+                </div>
+                <div class="feature-list">
+                  <div class="feature-item">
+                    Managed organizational communications and information dissemination
+                    to support various activities and programs.
+                  </div>
+
+                  <div class="feature-item">
+                    Designed organizational visual assets, including logos, flyers,
+                    posters, banners, and social media content using Canva.
+                  </div>
+
+                  <div class="feature-item">
+                    Served as a speaker in a Canva design training session, introducing
+                    participants to basic design principles and practical visual design techniques.
+                  </div>
+
+                  <div class="feature-item">
+                    Served as a speaker in a discussion session titled <b>"Gender from the Perspective of Local
+                      Wisdom,"</b> delivering the material and facilitating discussions with participants.
+                  </div>
+
+                  <div class="feature-item">
+                    Coordinated organizational agendas and work programs with the
+                    executive board and committee members.
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- ROLE 02 -->
+            <div class="t-item">
+              <div class="when">2025 – Present</div>
+              <h3>General Treasurer</h3>
+              <div class="org">HMI Komisariat Unitama</div>
+              <div style="
+                    margin-top: 8px;
+                    color: var(--text-soft);
+                    font-size: 14.5px;
+                  ">
+                <div style="
+                      color: var(--amber-soft);
+                      font-weight: 700;
+                      margin-bottom: 4px;
+                    ">
+                  Key Contributions
+                </div>
+                <div class="feature-list">
+                  <div class="feature-item">
+                    Managed organizational budgets and maintained accurate financial accountability reports, ensuring
+                    all reports were submitted on time.
+
+                  </div>
+                  <div class="feature-item">
+                    Prepared event budgets and financial administration
+                    documentation for every activity.
+                  </div>
+                  <div class="feature-item">
+                    Coordinated with the daily management team on
+                    organizational operations.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ROLE 03 -->
+            <div class="t-item">
+              <div class="when">2025 – Present</div>
+              <h3>Junior Member</h3>
+              <div class="org">UKM IT Cyber Open Source Unitama</div>
+              <p style="margin-top: 8px">
+                Actively participated in IT discussions, open-source software
+                development, and internal programming workshops.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="land-section" id="certificates">
+        <div class="section-head">
+          <div class="eyebrow">八 · Certificates</div>
+          <h2 class="page-title">
+            Certificates &amp; <span class="accent">Licenses</span>
+          </h2>
+        </div>
+        <p class="lede">
+          A gallery of technical certifications, professional training, and
+          academic licenses earned to date.
+        </p>
+        <div class="cert-filter-tabs">
+          <button class="filter-tab active" onclick="filterCerts('ALL', event)">
+            [ ALL ]
+          </button>
+          <button class="filter-tab" onclick="filterCerts('PROGRAMMING &amp; WEB', event)">
+            [ PROGRAMMING &amp; WEB ]
+          </button>
+          <button class="filter-tab" onclick="filterCerts('DATA &amp; ANALYTICS', event)">
+            [ DATA &amp; ANALYTICS ]
+          </button>
+          <button class="filter-tab" onclick="filterCerts('TECHNOLOGY', event)">
+            [ TECHNOLOGY ]
+          </button>
+          <button class="filter-tab" onclick="filterCerts('UI/UX', event)">
+            [ UI/UX ]
+          </button>
+          <button class="filter-tab" onclick="filterCerts('LANGUAGE', event)">
+            [ LANGUAGE ]
+          </button>
+          <button class="filter-tab" onclick="filterCerts('OTHER', event)">
+            [ OTHER ]
+          </button>
+        </div>
+        <div class="cert-grid">
+          <!-- 01. Python -->
+          <div class="cert-card" data-category="PROGRAMMING &amp; WEB">
+            <div class="cert-img-wrapper" onclick="
+                  openCertModal(
+                    'assets/certificates/SERTIFIKAT/seertifikat python_page-0001.jpg',
+                    'Python',
+                  )
+                ">
+              <img alt="Certificate: Python" class="cert-img" loading="lazy" onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  " src="assets/certificates/SERTIFIKAT/seertifikat python_page-0001.jpg" />
+              <div class="cert-img-placeholder" style="display: none">
+                <span>📄 [assets/certificates/SERTIFIKAT/seertifikat
+                  python_page-0001.jpg]</span>
+                <span style="font-size: 11px; color: var(--text-soft)">// Add JPG file to assets/certificates/</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-badge">PROGRAMMING &amp; WEB</div>
+              <h3 class="cert-title">Python</h3>
+              <div class="cert-provider">Certification Platform</div>
+              <div class="cert-period">Competency License</div>
+              <button class="btn btn-outline cert-btn" onclick="
+                    openCertModal(
+                      'assets/certificates/SERTIFIKAT/seertifikat python_page-0001.jpg',
+                      'Python',
+                    )
+                  ">
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <!-- 02. Software Development -->
+          <div class="cert-card" data-category="PROGRAMMING &amp; WEB">
+            <div class="cert-img-wrapper" onclick="
+                  openCertModal(
+                    'assets/certificates/SERTIFIKAT/SERTIFIKAT DASAR PENGEMBANG SOFTWARE_page-0001.jpg',
+                    'Software Development Fundamentals',
+                  )
+                ">
+              <img alt="Certificate: Software Development Fundamentals" class="cert-img" loading="lazy" onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  " src="assets/certificates/SERTIFIKAT/SERTIFIKAT DASAR PENGEMBANG SOFTWARE_page-0001.jpg" />
+              <div class="cert-img-placeholder" style="display: none">
+                <span>📄 [assets/certificates/SERTIFIKAT/SERTIFIKAT DASAR
+                  PENGEMBANG SOFTWARE_page-0001.jpg]</span>
+                <span style="font-size: 11px; color: var(--text-soft)">// Add JPG file to assets/certificates/</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-badge">PROGRAMMING &amp; WEB</div>
+              <h3 class="cert-title">Software Development Fundamentals</h3>
+              <div class="cert-provider">Dicoding Indonesia</div>
+              <div class="cert-period">Sep 2023 – Sep 2026</div>
+              <button class="btn btn-outline cert-btn" onclick="
+                    openCertModal(
+                      'assets/certificates/SERTIFIKAT/SERTIFIKAT DASAR PENGEMBANG SOFTWARE_page-0001.jpg',
+                      'Software Development Fundamentals',
+                    )
+                  ">
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <!-- 02. Software Development -->
+          <div class="cert-card" data-category="PROGRAMMING &amp; WEB">
+            <div class="cert-img-wrapper" onclick="
+                  openCertModal(
+                    'assets/certificates/1775934923275 (1).jpg',
+                    'Software Development Fundamentals',
+                  )
+                ">
+              <img alt="Certificate: Software Development Fundamentals" class="cert-img" loading="lazy" onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  " src="assets/certificates/1775934923275 (1).jpg" />
+              <div class="cert-img-placeholder" style="display: none">
+                <span>📄 [assets/certificates/1775934923275 (1).jpg]</span>
+                <span style="font-size: 11px; color: var(--text-soft)">// Add JPG file to assets/certificates/</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-badge">PROGRAMMING &amp; WEB</div>
+              <h3 class="cert-title">Junior Web Developer</h3>
+              <div class="cert-provider">VSGA KOMINFO & BNSP</div>
+              <div class="cert-period">Dec 2025 – Dec 2028</div>
+              <button class="btn btn-outline cert-btn" onclick="
+                    openCertModal(
+                      'assets/certificates/1775934923275 (1).jpg',
+                      'Software Development Fundamentals',
+                    )
+                  ">
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <!-- 03. SQL -->
+          <div class="cert-card" data-category="PROGRAMMING &amp; WEB">
+            <div class="cert-img-wrapper" onclick="
+                  openCertModal(
+                    'assets/certificates/SERTIFIKAT/SERTIFIKAT DASAR STRUKTURED QUERY LANGUAGE_page-0001.jpg',
+                    'SQL Fundamentals',
+                  )
+                ">
+              <img alt="Certificate: SQL Fundamentals" class="cert-img" loading="lazy" onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  " src="assets/certificates/SERTIFIKAT/SERTIFIKAT DASAR STRUKTURED QUERY LANGUAGE_page-0001.jpg" />
+              <div class="cert-img-placeholder" style="display: none">
+                <span>📄 [assets/certificates/SERTIFIKAT/SERTIFIKAT DASAR
+                  STRUKTURED QUERY LANGUAGE_page-0001.jpg]</span>
+                <span style="font-size: 11px; color: var(--text-soft)">// Add JPG file to assets/certificates/</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-badge">PROGRAMMING &amp; WEB</div>
+              <h3 class="cert-title">SQL Fundamentals</h3>
+              <div class="cert-provider">Dicoding Indonesia</div>
+              <div class="cert-period">Aug 2023 – Aug 2026</div>
+              <button class="btn btn-outline cert-btn" onclick="
+                    openCertModal(
+                      'assets/certificates/SERTIFIKAT/SERTIFIKAT DASAR STRUKTURED QUERY LANGUAGE_page-0001.jpg',
+                      'SQL Fundamentals',
+                    )
+                  ">
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <!-- 04. Git & GitHub -->
+          <div class="cert-card" data-category="PROGRAMMING &amp; WEB">
+            <div class="cert-img-wrapper" onclick="
+                  openCertModal(
+                    'assets/certificates/SERTIFIKAT/SERTFIKAT GIT &amp; GITHUB_page-0001.jpg',
+                    'Git &amp; GitHub Fundamentals',
+                  )
+                ">
+              <img alt="Certificate: Git &amp; GitHub Fundamentals" class="cert-img" loading="lazy" onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  " src="assets/certificates/SERTIFIKAT/SERTFIKAT GIT &amp; GITHUB_page-0001.jpg" />
+              <div class="cert-img-placeholder" style="display: none">
+                <span>📄 [assets/certificates/SERTIFIKAT/SERTFIKAT GIT &amp;
+                  GITHUB_page-0001.jpg]</span>
+                <span style="font-size: 11px; color: var(--text-soft)">// Add JPG file to assets/certificates/</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-badge">PROGRAMMING &amp; WEB</div>
+              <h3 class="cert-title">Git &amp; GitHub Fundamentals</h3>
+              <div class="cert-provider">Dicoding Indonesia</div>
+              <div class="cert-period">Aug 2023 – Aug 2026</div>
+              <button class="btn btn-outline cert-btn" onclick="
+                    openCertModal(
+                      'assets/certificates/SERTIFIKAT/SERTFIKAT GIT &amp; GITHUB_page-0001.jpg',
+                      'Git &amp; GitHub Fundamentals',
+                    )
+                  ">
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <!-- 05. Pemrograman Web -->
+          <div class="cert-card" data-category="PROGRAMMING &amp; WEB">
+            <div class="cert-img-wrapper" onclick="
+                  openCertModal(
+                    'assets/certificates/SERTIFIKAT/SERTIFIKAT WEB DASAR_page-0001.jpg',
+                    'Web Programming Fundamentals',
+                  )
+                ">
+              <img alt="Certificate: Web Programming Fundamentals" class="cert-img" loading="lazy" onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  " src="assets/certificates/SERTIFIKAT/SERTIFIKAT WEB DASAR_page-0001.jpg" />
+              <div class="cert-img-placeholder" style="display: none">
+                <span>📄 [assets/certificates/SERTIFIKAT/SERTIFIKAT WEB
+                  DASAR_page-0001.jpg]</span>
+                <span style="font-size: 11px; color: var(--text-soft)">// Add JPG file to assets/certificates/</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-badge">PROGRAMMING &amp; WEB</div>
+              <h3 class="cert-title">Web Programming Fundamentals</h3>
+              <div class="cert-provider">Dicoding Indonesia</div>
+              <div class="cert-period">Jul 2023 – Jul 2026</div>
+              <button class="btn btn-outline cert-btn" onclick="
+                    openCertModal(
+                      'assets/certificates/SERTIFIKAT/SERTIFIKAT WEB DASAR_page-0001.jpg',
+                      'Web Programming Fundamentals',
+                    )
+                  ">
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <!-- 06. JavaScript -->
+          <div class="cert-card" data-category="PROGRAMMING &amp; WEB">
+            <div class="cert-img-wrapper" onclick="
+                  openCertModal(
+                    'assets/certificates/SERTIFIKAT/SERTIFIKAT JAVA SCRIPTS_page-0001.jpg',
+                    'JavaScript',
+                  )
+                ">
+              <img alt="Certificate: JavaScript" class="cert-img" loading="lazy" onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  " src="assets/certificates/SERTIFIKAT/SERTIFIKAT JAVA SCRIPTS_page-0001.jpg" />
+              <div class="cert-img-placeholder" style="display: none">
+                <span>📄 [assets/certificates/SERTIFIKAT/SERTIFIKAT JAVA
+                  SCRIPTS_page-0001.jpg]</span>
+                <span style="font-size: 11px; color: var(--text-soft)">// Add JPG file to assets/certificates/</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-badge">PROGRAMMING &amp; WEB</div>
+              <h3 class="cert-title">JavaScript</h3>
+              <div class="cert-provider">Certification Platform</div>
+              <div class="cert-period">Competency License</div>
+              <button class="btn btn-outline cert-btn" onclick="
+                    openCertModal(
+                      'assets/certificates/SERTIFIKAT/SERTIFIKAT JAVA SCRIPTS_page-0001.jpg',
+                      'JavaScript',
+                    )
+                  ">
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <!-- 07. Fundamental Data Science -->
+          <div class="cert-card" data-category="DATA &amp; ANALYTICS">
+            <div class="cert-img-wrapper" onclick="
+                  openCertModal(
+                    'assets/certificates/SERTIFIKAT/certificate-DQLAB Fundamental Data Science_page-0001.jpg',
+                    'Fundamental Data Science',
+                  )
+                ">
+              <img alt="Certificate: Fundamental Data Science" class="cert-img" loading="lazy" onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  " src="assets/certificates/SERTIFIKAT/certificate-DQLAB Fundamental Data Science_page-0001.jpg" />
+              <div class="cert-img-placeholder" style="display: none">
+                <span>📄 [assets/certificates/SERTIFIKAT/certificate-DQLAB
+                  Fundamental Data Science_page-0001.jpg]</span>
+                <span style="font-size: 11px; color: var(--text-soft)">// Add JPG file to assets/certificates/</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-badge">DATA &amp; ANALYTICS</div>
+              <h3 class="cert-title">Fundamental Data Science</h3>
+              <div class="cert-provider">DQLab</div>
+              <div class="cert-period">Competency License</div>
+              <button class="btn btn-outline cert-btn" onclick="
+                    openCertModal(
+                      'assets/certificates/SERTIFIKAT/certificate-DQLAB Fundamental Data Science_page-0001.jpg',
+                      'Fundamental Data Science',
+                    )
+                  ">
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <!-- 08. Data Science with R -->
+          <div class="cert-card" data-category="DATA &amp; ANALYTICS">
+            <div class="cert-img-wrapper" onclick="
+                  openCertModal(
+                    'assets/certificates/SERTIFIKAT/certificate-DQLAB Data Science R_page-0001.jpg',
+                    'Data Science with R',
+                  )
+                ">
+              <img alt="Certificate: Data Science with R" class="cert-img" loading="lazy" onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  " src="assets/certificates/SERTIFIKAT/certificate-DQLAB Data Science R_page-0001.jpg" />
+              <div class="cert-img-placeholder" style="display: none">
+                <span>📄 [assets/certificates/SERTIFIKAT/certificate-DQLAB Data
+                  Science R_page-0001.jpg]</span>
+                <span style="font-size: 11px; color: var(--text-soft)">// Add JPG file to assets/certificates/</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-badge">DATA &amp; ANALYTICS</div>
+              <h3 class="cert-title">Data Science with R</h3>
+              <div class="cert-provider">DQLab</div>
+              <div class="cert-period">Competency License</div>
+              <button class="btn btn-outline cert-btn" onclick="
+                    openCertModal(
+                      'assets/certificates/SERTIFIKAT/certificate-DQLAB Data Science R_page-0001.jpg',
+                      'Data Science with R',
+                    )
+                  ">
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <!-- 09. R with AI -->
+          <div class="cert-card" data-category="DATA &amp; ANALYTICS">
+            <div class="cert-img-wrapper" onclick="
+                  openCertModal(
+                    'assets/certificates/SERTIFIKAT/certificate-DQLAB R with AI_page-0001.jpg',
+                    'R with AI',
+                  )
+                ">
+              <img alt="Certificate: R with AI" class="cert-img" loading="lazy" onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  " src="assets/certificates/SERTIFIKAT/certificate-DQLAB R with AI_page-0001.jpg" />
+              <div class="cert-img-placeholder" style="display: none">
+                <span>📄 [assets/certificates/SERTIFIKAT/certificate-DQLAB R with
+                  AI_page-0001.jpg]</span>
+                <span style="font-size: 11px; color: var(--text-soft)">// Add JPG file to assets/certificates/</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-badge">DATA &amp; ANALYTICS</div>
+              <h3 class="cert-title">R with AI</h3>
+              <div class="cert-provider">DQLab</div>
+              <div class="cert-period">Competency License</div>
+              <button class="btn btn-outline cert-btn" onclick="
+                    openCertModal(
+                      'assets/certificates/SERTIFIKAT/certificate-DQLAB R with AI_page-0001.jpg',
+                      'R with AI',
+                    )
+                  ">
+                View Certificate
+              </button>
+            </div>
+          </div>
+
+          <!-- 11. Data Visualization -->
+          <div class="cert-card" data-category="DATA &amp; ANALYTICS">
+            <div class="cert-img-wrapper" onclick="
+                  openCertModal(
+                    'assets/certificates/SERTIFIKAT/sertifikat visualisasi data_page-0001.jpg',
+                    'Data Visualization',
+                  )
+                ">
+              <img alt="Certificate: Data Visualization" class="cert-img" loading="lazy" onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  " src="assets/certificates/SERTIFIKAT/sertifikat visualisasi data_page-0001.jpg" />
+              <div class="cert-img-placeholder" style="display: none">
+                <span>📄 [assets/certificates/SERTIFIKAT/sertifikat visualisasi
+                  data_page-0001.jpg]</span>
+                <span style="font-size: 11px; color: var(--text-soft)">// Add JPG file to assets/certificates/</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-badge">DATA &amp; ANALYTICS</div>
+              <h3 class="cert-title">Data Visualization</h3>
+              <div class="cert-provider">Certification Platform</div>
+              <div class="cert-period">Competency License</div>
+              <button class="btn btn-outline cert-btn" onclick="
+                    openCertModal(
+                      'assets/certificates/SERTIFIKAT/sertifikat visualisasi data_page-0001.jpg',
+                      'Data Visualization',
+                    )
+                  ">
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <!-- 12. DevOps -->
+          <div class="cert-card" data-category="TECHNOLOGY">
+            <div class="cert-img-wrapper" onclick="
+                  openCertModal(
+                    'assets/certificates/SERTIFIKAT/SERTIFIKAT DEV OPS_page-0001.jpg',
+                    'DevOps',
+                  )
+                ">
+              <img alt="Certificate: DevOps" class="cert-img" loading="lazy" onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  " src="assets/certificates/SERTIFIKAT/SERTIFIKAT DEV OPS_page-0001.jpg" />
+              <div class="cert-img-placeholder" style="display: none">
+                <span>📄 [assets/certificates/SERTIFIKAT/SERTIFIKAT DEV
+                  OPS_page-0001.jpg]</span>
+                <span style="font-size: 11px; color: var(--text-soft)">// Add JPG file to assets/certificates/</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-badge">TECHNOLOGY</div>
+              <h3 class="cert-title">DevOps</h3>
+              <div class="cert-provider">Certification Platform</div>
+              <div class="cert-period">Competency License</div>
+              <button class="btn btn-outline cert-btn" onclick="
+                    openCertModal(
+                      'assets/certificates/SERTIFIKAT/SERTIFIKAT DEV OPS_page-0001.jpg',
+                      'DevOps',
+                    )
+                  ">
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <!-- 13. UI/UX -->
+          <div class="cert-card" data-category="UI/UX">
+            <div class="cert-img-wrapper" onclick="
+                  openCertModal(
+                    'assets/certificates/SERTIFIKAT/DICODING EVENT UI UX_page-0001.jpg',
+                    'UI/UX Design',
+                  )
+                ">
+              <img alt="Certificate: UI/UX Design" class="cert-img" loading="lazy" onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  " src="assets/certificates/SERTIFIKAT/DICODING EVENT UI UX_page-0001.jpg" />
+              <div class="cert-img-placeholder" style="display: none">
+                <span>📄 [assets/certificates/SERTIFIKAT/DICODING EVENT UI
+                  UX_page-0001.jpg]</span>
+                <span style="font-size: 11px; color: var(--text-soft)">// Add JPG file to assets/certificates/</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-badge">UI/UX</div>
+              <h3 class="cert-title">UI/UX Design</h3>
+              <div class="cert-provider">Certification Platform</div>
+              <div class="cert-period">Competency License</div>
+              <button class="btn btn-outline cert-btn" onclick="
+                    openCertModal(
+                      'assets/certificates/SERTIFIKAT/DICODING EVENT UI UX_page-0001.jpg',
+                      'UI/UX Design',
+                    )
+                  ">
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <!-- 14. HSK 1 -->
+          <div class="cert-card" data-category="LANGUAGE">
+            <div class="cert-img-wrapper" onclick="
+                  openCertModal(
+                    'assets/certificates/Coursera HSK 1_page-0001.jpg',
+                    'Chinese for HSK 1',
+                  )
+                ">
+              <img alt="Certificate: Chinese for HSK 1 Peking University" class="cert-img" loading="lazy" onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  " src="assets/certificates/Coursera HSK 1_page-0001.jpg" />
+              <div class="cert-img-placeholder" style="display: none">
+                <span>📄 [assets/certificates/Coursera HSK 1_page-0001.jpg]</span>
+                <span style="font-size: 11px; color: var(--text-soft)">// Add JPG file to assets/certificates/</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-badge">LANGUAGE</div>
+              <h3 class="cert-title">Chinese for HSK 1</h3>
+              <div class="cert-provider">Peking University</div>
+              <div class="cert-period">Oct 2025 – Oct 2028</div>
+              <button class="btn btn-outline cert-btn" onclick="
+                    openCertModal(
+                      'assets/certificates/Coursera HSK 1_page-0001.jpg',
+                      'Chinese for HSK 1',
+                    )
+                  ">
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <div class="cert-card" data-category="LANGUAGE">
+            <div class="cert-img-wrapper" onclick="
+                  openCertModal(
+                    'assets/certificates/Chinese beginner .jpg',
+                    'Chinese for HSK 1',
+                  )
+                ">
+              <img alt="Certificate: Chinese for HSK 1 Peking University" class="cert-img" loading="lazy" onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  " src="assets/certificates/Chinese beginner .jpg" />
+              <div class="cert-img-placeholder" style="display: none">
+                <span>📄 [assets/certificates/Chinese beginner .jpg]</span>
+                <span style="font-size: 11px; color: var(--text-soft)">// Add JPG file to assets/certificates/</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-badge">LANGUAGE</div>
+              <h3 class="cert-title">Chinese for beginners</h3>
+              <div class="cert-provider">Peking University</div>
+              <div class="cert-period">Oct 2025 – Oct 2028</div>
+              <button class="btn btn-outline cert-btn" onclick="
+                    openCertModal(
+                      'assets/certificates/Chinese beginner .jpg',
+                      'Chinese for HSK 1',
+                    )
+                  ">
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <!-- 15. Financial Literacy -->
+          <div class="cert-card" data-category="OTHER">
+            <div class="cert-img-wrapper" onclick="
+                  openCertModal(
+                    'assets/certificates/SERTIFIKAT/sertifikat financial literacy_page-0001.jpg',
+                    'Financial Literacy',
+                  )
+                ">
+              <img alt="Certificate: Financial Literacy" class="cert-img" loading="lazy" onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  " src="assets/certificates/SERTIFIKAT/sertifikat financial literacy_page-0001.jpg" />
+              <div class="cert-img-placeholder" style="display: none">
+                <span>📄 [assets/certificates/SERTIFIKAT/sertifikat financial
+                  literacy_page-0001.jpg]</span>
+                <span style="font-size: 11px; color: var(--text-soft)">// Add JPG file to assets/certificates/</span>
+              </div>
+            </div>
+            <div class="cert-card-body">
+              <div class="cert-badge">OTHER</div>
+              <h3 class="cert-title">Financial Literacy</h3>
+              <div class="cert-provider">Certification Platform</div>
+              <div class="cert-period">Competency License</div>
+              <button class="btn btn-outline cert-btn" onclick="
+                    openCertModal(
+                      'assets/certificates/SERTIFIKAT/sertifikat financial literacy_page-0001.jpg',
+                      'Financial Literacy',
+                    )
+                  ">
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="land-section" id="resume">
+        <div class="section-head">
+          <div class="eyebrow">九 · Resume</div>
+          <h2 class="page-title">
+            Curriculum <span class="accent">Vitae</span>
+          </h2>
+        </div>
+        <p class="lede">
+          A complete summary of academic qualifications, professional
+          experience, technical skills, and certifications.
+        </p>
+        <div class="section" style="margin-top: 28px">
+          <div class="card cv-banner" style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 20px;
+              ">
+            <div>
+              <div class="eyebrow">official cv file</div>
+              <h2 style="
+                    font-size: 20px;
+                    margin-bottom: 4px;
+                    color: var(--text);
+                  ">
+                CV_Nara_Puspitasari.pdf
+              </h2>
+              <p style="color: var(--text-soft); font-size: 13.5px">
+                View and download my professional resume for career and recruitment opportunities.
+              </p>
+            </div>
+            <a class="btn btn-primary" download="" href="assets/CV_Nara_Puspitasari.pdf" target="_blank">Download CV</a>
+          </div>
+        </div>
+        <div class="section" style="margin-top: 36px">
+          <div class="card">
+            <div class="eyebrow">01 — Profile Summary</div>
+            <h2 style="
+                  font-size: 18px;
+                  margin-bottom: 10px;
+                  color: var(--amber-soft);
+                ">
+              Nara Puspitasari
+            </h2>
+            <p style="
+                  color: var(--text-soft);
+                  font-size: 14.5px;
+                  line-height: 1.7;
+                ">
+              Informatics Engineering student at UNITAMA (GPA 3.88/4.00)
+              specializing in Data Analysis, Data Science, and Front-End
+              Development. Thesis applies EfficientNet-B0 deep learning to
+              tomato leaf disease classification. Hands-on experience in web
+              development, WebGIS, and graphic design, backed by
+              organizational leadership as Head of Information &amp;
+              Communication Network at HPMM Kom. UIM and General Treasurer at
+              HMI Unitama Chapter.
+            </p>
+          </div>
+        </div>
+        <div class="section" style="margin-top: 28px">
+          <div class="card">
+            <div class="eyebrow">02 — Education</div>
+            <h2 style="font-size: 18px; margin-bottom: 12px">
+              Formal Education
+            </h2>
+            <div>
+              <div style="font-size: 16px; font-weight: 700; color: var(--text)">
+                Universitas Teknologi Akba Makassar (UNITAMA)
+              </div>
+              <div style="
+                    color: var(--teal-soft);
+                    font-size: 14px;
+                    margin-top: 2px;
+                  ">
+                B.Sc. Informatics Engineering · 2022 – 2026
+              </div>
+              <div style="
+                    color: var(--amber);
+                    font-weight: 700;
+                    font-size: 14px;
+                    margin-top: 4px;
+                  ">
+                GPA: 3.88 / 4.00
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section" style="margin-top: 28px">
+          <div class="card">
+            <div class="eyebrow">03 — Experience</div>
+            <h2 style="font-size: 18px; margin-bottom: 16px">
+              Work &amp; Design Experience
+            </h2>
+            <div style="display: flex; flex-direction: column; gap: 16px">
+              <div style="
+                    border-bottom: 1px solid var(--line);
+                    padding-bottom: 14px;
+                  ">
+                <div style="
+                      font-size: 15.5px;
+                      font-weight: 700;
+                      color: var(--text);
+                    ">
+                  Graphic Designer — HPMM
+                </div>
+                <div style="color: var(--text-dim); font-size: 12.5px">
+                  August 2025 – June 2026
+                </div>
+                <p style="
+                      color: var(--text-soft);
+                      font-size: 13.5px;
+                      margin-top: 6px;
+                    ">
+                  Designed event flyers, banners, and publication visuals
+                  across organizational events, coordinating communication
+                  media.
+                </p>
+              </div>
+              <div>
+                <div style="
+                      font-size: 15.5px;
+                      font-weight: 700;
+                      color: var(--text);
+                    ">
+                  Graphic Designer — AJE FARM
+                </div>
+                <div style="color: var(--text-dim); font-size: 12.5px">
+                  November 2025
+                </div>
+                <p style="
+                      color: var(--text-soft);
+                      font-size: 13.5px;
+                      margin-top: 6px;
+                    ">
+                  Designed a complete logo and visual identity for a poultry
+                  business.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section" style="margin-top: 28px">
+          <div class="card">
+            <div class="eyebrow">04 — Organization</div>
+            <h2 style="font-size: 18px; margin-bottom: 16px">
+              Organizational Experience
+            </h2>
+            <div style="display: flex; flex-direction: column; gap: 14px">
+              <div>
+                <span style="color: var(--text); font-weight: 700">HPMM Kom. UIM</span>
+                – Head of Information &amp; Communication Network
+                <span style="color: var(--text-dim); font-size: 12px">(2024-2025)</span>
+              </div>
+              <div>
+                <span style="color: var(--text); font-weight: 700">HMI Unitama Chapter</span>
+                – General Treasurer
+                <span style="color: var(--text-dim); font-size: 12px">(2025–Present)</span>
+              </div>
+              <div>
+                <span style="color: var(--text); font-weight: 700">UKM IT Cyber Open Source Unitama</span>
+                – Junior Member
+                <span style="color: var(--text-dim); font-size: 12px">(2025–Present)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section" style="margin-top: 28px">
+          <div class="card">
+            <div class="eyebrow">05 — Languages</div>
+            <h2 style="font-size: 18px; margin-bottom: 14px">Languages</h2>
+            <div class="grid-3">
+              <div class="focus-card" style="padding: 16px">
+                <div style="font-weight: 700; color: var(--text)">
+                  Indonesian
+                </div>
+                <div style="
+                      color: var(--teal-soft);
+                      font-size: 13px;
+                      margin-top: 4px;
+                    ">
+                  Native
+                </div>
+              </div>
+              <div class="focus-card" style="padding: 16px">
+                <div style="font-weight: 700; color: var(--text)">
+                  English
+                </div>
+                <div style="
+                      color: var(--amber-soft);
+                      font-size: 13px;
+                      margin-top: 4px;
+                    ">
+                  Intermediate
+                </div>
+              </div>
+              <div class="focus-card" style="padding: 16px">
+                <div style="font-weight: 700; color: var(--text)">
+                  简体中文 (Chinese)
+                </div>
+                <div style="
+                      color: var(--text-soft);
+                      font-size: 13px;
+                      margin-top: 4px;
+                    ">
+                  Basic — HSK 1
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="land-section" id="contact">
+        <div class="section-head">
+          <div class="eyebrow">十 · Contact</div>
+          <h2 class="page-title">
+            Let's <span class="accent">Connect</span>
+          </h2>
+        </div>
+        <p class="lede">
+          Open to internships and project collaboration in Data Analysis, Data
+          Science, Front-End Development, and Graphic Design.
+        </p>
+        <div class="section" style="margin-top: 32px">
+          <div class="grid-2">
+            <!-- FORM KONTAK -->
+            <!-- FORM KONTAK -->
+            <div class="card">
+              <div class="eyebrow">message form</div>
+              <h2 style="font-size: 18px; margin-bottom: 16px">
+                Send a Message
+              </h2>
+              <form id="contactForm" action="https://formspree.io/f/xzeboarj" method="POST">
+                <div class="form-field">
+                  <label for="name">FULL NAME</label>
+                  <input id="name" name="name" placeholder="Enter your name..." required="" type="text" />
+                </div>
+                <div class="form-field">
+                  <label for="email">EMAIL ADDRESS</label>
+                  <input id="email" name="_replyto" placeholder="nama@email.com" required="" type="email" />
+                </div>
+                <div class="form-field">
+                  <label for="message">MESSAGE</label>
+                  <textarea id="message" name="message" placeholder="Write your message here..." required=""></textarea>
+                </div>
+
+                <!-- anti-spam honeypot, jangan dihapus -->
+                <input type="text" name="_gotcha" style="display: none" tabindex="-1" autocomplete="off" />
+                <input type="hidden" name="_subject" value="New message from your portfolio site" />
+
+                <button class="btn btn-primary" id="contactSubmitBtn" style="width: 100%" type="submit">
+                  Send Message →
+                </button>
+                <div id="contactFormStatus" style="
+                      margin-top: 12px;
+                      font-size: 13px;
+                      display: none;
+                      line-height: 1.5;
+                    "></div>
+              </form>
+            </div>
+            <!-- KONTAK LANGSUNG -->
+            <div class="card">
+              <div class="eyebrow">direct contact</div>
+              <h2 style="font-size: 18px; margin-bottom: 16px">
+                Contact Channels
+              </h2>
+              <div class="contact-list">
+                <a href="mailto:narapark878@gmail.com">
+                  <span>✉</span> Email: narapark878@gmail.com
+                </a>
+                <a href="https://github.com/Narapuspitasari" rel="noopener" target="_blank">
+                  <span>◉</span> GitHub: github.com/Narapuspitasari
+                </a>
+                <a href="https://www.linkedin.com/in/nara-puspitasari-169b65243/" rel="noopener" target="_blank">
+                  <span>🔗</span> LinkedIn:
+                  linkedin.com/in/nara-puspitasari-169b65243
+                </a>
+              </div>
+              <div class="availability-card">
+                <div class="availability-header">
+                  <span class="availability-dot" aria-hidden="true"></span>
+                  Availability
+                </div>
+                <div style="
+                      font-size: 13.5px;
+                      color: var(--text-soft);
+                      margin-top: 4px;
+                    ">
+                  Available for full-time roles starting [add month] 2026 —
+                  also open to internship programs &amp; entry-level IT roles.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <button aria-label="Back to top" class="back-to-top" id="backToTop" type="button">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+      stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+  <div class="cert-modal" id="certModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title" id="modalTitle">View Certificate</div>
+        <button aria-label="Close certificate" class="modal-close-btn" id="modalClose">
+          ×
+        </button>
+      </div>
+      <div class="modal-body">
+        <img alt="Certificate preview" class="modal-img" id="modalImg" onerror="
+              this.src =
+                'data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'&gt;&lt;rect width=\'100%\' height=\'100%\' fill=\'%23151B36\'/&gt;&lt;text x=\'50%\' y=\'50%\' font-family=\'monospace\' font-size=\'14\' fill=\'%239AA1C4\' text-anchor=\'middle\'&gt;Certificate image preview&lt;/text&gt;&lt;/svg&gt;'
+            " src="" />
+      </div>
+    </div>
+  </div>
+  <script>
+
+
+    // DATE
+
+
+    function updateDate() {
+      const now = new Date();
+
+      // Tahun
+      document.getElementById("currentYear").textContent =
+        now.getFullYear();
+
+      // Bulan.Tanggal
+      const month = String(now.getMonth() + 1).padStart(2, "0");
+      const day = String(now.getDate()).padStart(2, "0");
+
+      document.getElementById("currentDate").textContent =
+        `${month}.${day}`;
+    }
+
+    // Jalankan saat website dibuka
+    updateDate();
+
+    // Mobile sidebar toggle
+    const burgerBtn = document.getElementById("burgerBtn");
+    const sidebarEl = document.getElementById("sidebar");
+    const overlayEl = document.getElementById("sidebarOverlay");
+
+    function toggleSidebar() {
+      sidebarEl.classList.toggle("open");
+      overlayEl.classList.toggle("active");
+    }
+    burgerBtn.addEventListener("click", toggleSidebar);
+    overlayEl.addEventListener("click", toggleSidebar);
+
+    // Close sidebar automatically after tapping a nav link (mobile)
+    document.querySelectorAll(".file-item").forEach((link) => {
+      link.addEventListener("click", () => {
+        if (sidebarEl.classList.contains("open")) toggleSidebar();
+      });
+    });
+
+    // Certificate category filter
+    function filterCerts(cat, event) {
+      document
+        .querySelectorAll(".filter-tab")
+        .forEach((t) => t.classList.remove("active"));
+      if (event && event.target) event.target.classList.add("active");
+      document.querySelectorAll(".cert-card").forEach((card) => {
+        const cardCat = card.getAttribute("data-category");
+        card.style.display =
+          cat === "ALL" || cardCat === cat ? "flex" : "none";
+      });
+    }
+
+    // Certificate lightbox modal
+    const certModal = document.getElementById("certModal");
+    const modalImg = document.getElementById("modalImg");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalClose = document.getElementById("modalClose");
+
+    function openCertModal(imgSrc, title) {
+      modalImg.src = imgSrc;
+      modalTitle.textContent = title;
+      certModal.classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+    function closeCertModal() {
+      certModal.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+    modalClose.addEventListener("click", closeCertModal);
+    certModal.addEventListener("click", (e) => {
+      if (e.target === certModal) closeCertModal();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && certModal.classList.contains("active"))
+        closeCertModal();
+    });
+
+    // Scroll-spy: highlight active sidebar item as sections pass through view
+    const sections = document.querySelectorAll(
+      "main > .section[id], main > section[id]",
+    );
+    const navLinks = document.querySelectorAll(".file-item");
+
+    const spy = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute("id");
+            navLinks.forEach((link) => {
+              link.classList.toggle("active", link.dataset.section === id);
+            });
+          }
+        });
+      },
+      { rootMargin: "-40% 0px -55% 0px", threshold: 0 },
+    );
+
+    sections.forEach((sec) => spy.observe(sec));
+
+    // Scroll reveal — fade + slide up as content blocks enter the viewport
+    const revealTargets = document.querySelectorAll(
+      [
+        ".land-section .card",
+        ".focus-card",
+        ".quick-link-card",
+        ".project-card",
+        ".cert-card",
+        ".skills-marquee-viewport",
+        ".t-item",
+        ".hero-poster-wrapper",
+      ].join(", "),
+    );
+    revealTargets.forEach((el) => el.classList.add("reveal"));
+
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            const target = entry.target;
+            // small stagger so groups of cards don't all pop at once
+            setTimeout(
+              () => {
+                target.classList.add("in-view");
+                // once the entrance finishes, drop the reveal transition so
+                // it doesn't slow down this element's normal hover transitions
+                setTimeout(
+                  () => target.classList.remove("reveal", "in-view"),
+                  650,
+                );
+              },
+              (i % 4) * 70,
+            );
+            revealObserver.unobserve(target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
+    );
+    revealTargets.forEach((el) => revealObserver.observe(el));
+
+    // Lazy image fade-in once loaded
+    document.querySelectorAll('img[loading="lazy"]').forEach((img) => {
+      if (img.complete) {
+        img.classList.add("loaded");
+      } else {
+        img.addEventListener("load", () => img.classList.add("loaded"));
+      }
+    });
+
+    // Back to top button + subtle sidebar shadow once the page scrolls
+    const backToTopBtn = document.getElementById("backToTop");
+    window.addEventListener(
+      "scroll",
+      () => {
+        backToTopBtn.classList.toggle("visible", window.scrollY > 480);
+        sidebarEl.classList.toggle("scrolled", window.scrollY > 10);
+      },
+      { passive: true },
+    );
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Contact form — inline validation + AJAX submit with visual feedback
+    const contactForm = document.getElementById("contactForm");
+    const contactStatus = document.getElementById("contactFormStatus");
+    const submitBtn = document.getElementById("contactSubmitBtn");
+    const submitBtnLabel = submitBtn ? submitBtn.textContent : "";
+
+    function setFieldState(fieldName, valid) {
+      const wrapper = contactForm.querySelector(
+        `[data-field="${fieldName}"]`,
+      );
+      if (!wrapper) return;
+      wrapper.classList.toggle("invalid", !valid);
+      wrapper.classList.toggle("valid", valid);
+    }
+
+    function validateContactForm() {
+      const name = document.getElementById("name");
+      const email = document.getElementById("email");
+      const message = document.getElementById("message");
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      const nameValid = name.value.trim().length > 1;
+      const emailValid = emailPattern.test(email.value.trim());
+      const messageValid = message.value.trim().length > 4;
+
+      setFieldState("name", nameValid);
+      setFieldState("email", emailValid);
+      setFieldState("message", messageValid);
+
+      return nameValid && emailValid && messageValid;
+    }
+
+    if (contactForm) {
+      // Clear a field's error state as soon as the person starts fixing it
+      ["name", "email", "message"].forEach((id) => {
+        const el = document.getElementById(id);
+        el.addEventListener("input", () => {
+          const wrapper = el.closest(".form-field");
+          if (wrapper.classList.contains("invalid")) validateContactForm();
+        });
+      });
+
+      contactForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        contactStatus.className = "";
+        contactStatus.style.display = "none";
+
+        if (!validateContactForm()) {
+          contactStatus.textContent =
+            "Please fix the highlighted fields before sending.";
+          contactStatus.className = "status-error";
+          return;
+        }
+
+        const originalLabel = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span class="btn-spinner"></span> Sending…';
+
+        try {
+          const response = await fetch(contactForm.action, {
+            method: "POST",
+            body: new FormData(contactForm),
+            headers: { Accept: "application/json" },
+          });
+
+          if (response.ok) {
+            contactStatus.textContent =
+              "Message sent — thank you! I'll reply to your email soon.";
+            contactStatus.className = "status-success";
+            contactForm.reset();
+            ["name", "email", "message"].forEach((id) => {
+              document
+                .getElementById(id)
+                .closest(".form-field")
+                .classList.remove("valid", "invalid");
+            });
+          } else {
+            contactStatus.textContent =
+              "Something went wrong sending your message. Please try again or email me directly.";
+            contactStatus.className = "status-error";
+          }
+        } catch (err) {
+          contactStatus.textContent =
+            "Network error — please check your connection and try again.";
+          contactStatus.className = "status-error";
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalLabel;
+        }
+      });
+    }
+
+    // ----- Modern motion pass: 3D tilt + hero parallax -----
+    // Skipped entirely when the visitor prefers reduced motion.
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    if (!prefersReducedMotion) {
+      // 3D tilt that follows the cursor, for cert/focus/quick-link cards
+      // (Projects intentionally excluded — flat hover only, no 3D tilt)
+      const tiltTargets = document.querySelectorAll(
+        [
+          ".cert-card",
+          ".focus-card",
+          ".quick-link-card",
+        ].join(", "),
+      );
+
+      tiltTargets.forEach((card) => {
+        card.classList.add("js-tilt");
+        card.style.setProperty("--tz", "0px");
+
+        card.addEventListener("mousemove", (e) => {
+          const rect = card.getBoundingClientRect();
+          const px = (e.clientX - rect.left) / rect.width - 0.5; // -0.5..0.5
+          const py = (e.clientY - rect.top) / rect.height - 0.5;
+          const maxDeg = 6;
+          card.style.setProperty("--rx", `${px * maxDeg * 2}deg`);
+          card.style.setProperty("--ry", `${-py * maxDeg * 2}deg`);
+          card.style.setProperty("--tz", "-6px");
+        });
+
+        card.addEventListener("mouseleave", () => {
+          card.style.setProperty("--rx", "0deg");
+          card.style.setProperty("--ry", "0deg");
+          card.style.setProperty("--tz", "0px");
+        });
+      });
+
+      // Subtle depth parallax on the hero's ink-wash background art
+      const heroWrapper = document.querySelector(".hero-poster-wrapper");
+      const parallaxLayers = [
+        { el: document.querySelector(".hero-bg-cloud"), depth: 10 },
+        { el: document.querySelector(".hero-bg-wave"), depth: 16 },
+        { el: document.querySelector(".hero-bg-pagoda"), depth: 8 },
+        { el: document.querySelector(".hero-bg-birds"), depth: 22 },
+      ].filter((layer) => layer.el);
+
+      if (heroWrapper && parallaxLayers.length) {
+        heroWrapper.addEventListener("mousemove", (e) => {
+          const rect = heroWrapper.getBoundingClientRect();
+          const px = (e.clientX - rect.left) / rect.width - 0.5;
+          const py = (e.clientY - rect.top) / rect.height - 0.5;
+          parallaxLayers.forEach(({ el, depth }) => {
+            el.style.transform = `translate(${px * depth}px, ${py * depth}px)`;
+          });
+        });
+        heroWrapper.addEventListener("mouseleave", () => {
+          parallaxLayers.forEach(({ el }) => {
+            el.style.transform = "translate(0px, 0px)";
+          });
+        });
+      }
+    }
+
+    // ----- Technical Skills: "running logos" marquee -----
+    // Duplicates each category's cards once so a -50% translateX loops
+    // seamlessly, then sets a duration proportional to content width so
+    // every row scrolls at roughly the same visual speed.
+    const marqueeTracks = document.querySelectorAll("[data-marquee-track]");
+    const marqueeReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    marqueeTracks.forEach((track) => {
+      const originalCards = Array.from(track.children);
+      originalCards.forEach((card) => {
+        const clone = card.cloneNode(true);
+        clone.setAttribute("aria-hidden", "true");
+        track.appendChild(clone);
+      });
+
+      if (!marqueeReducedMotion) {
+        const pxPerSecond = 34;
+        const distance = track.scrollWidth / 2;
+        const duration = Math.max(distance / pxPerSecond, 14);
+        track.style.animationDuration = `${duration}s`;
+      }
+    });
+
+    // ----- Graphic Design gallery: sliding carousel -----
+    (function initDesignSlider() {
+      const track = document.getElementById("designSliderTrack");
+      const dotsWrap = document.getElementById("designSliderDots");
+      const prevBtn = document.querySelector(".design-slider-prev");
+      const nextBtn = document.querySelector(".design-slider-next");
+      if (!track || !dotsWrap) return;
+
+      const slides = Array.from(track.children);
+
+      slides.forEach((_, i) => {
+        const dot = document.createElement("button");
+        dot.type = "button";
+        dot.className = "design-slider-dot";
+        dot.setAttribute("aria-label", `Go to design ${i + 1}`);
+        dot.addEventListener("click", () => {
+          slides[i].scrollIntoView({
+            behavior: "smooth",
+            inline: "start",
+            block: "nearest",
+          });
+        });
+        dotsWrap.appendChild(dot);
+      });
+      const dots = Array.from(dotsWrap.children);
+
+      function activeIndex() {
+        const trackLeft = track.getBoundingClientRect().left;
+        let closest = 0;
+        let minDist = Infinity;
+        slides.forEach((slide, i) => {
+          const dist = Math.abs(slide.getBoundingClientRect().left - trackLeft);
+          if (dist < minDist) {
+            minDist = dist;
+            closest = i;
+          }
+        });
+        return closest;
+      }
+
+      function updateDots() {
+        const i = activeIndex();
+        dots.forEach((d, di) => d.classList.toggle("active", di === i));
+      }
+
+      let dotTimer = null;
+      track.addEventListener(
+        "scroll",
+        () => {
+          window.clearTimeout(dotTimer);
+          dotTimer = window.setTimeout(updateDots, 80);
+        },
+        { passive: true },
+      );
+      updateDots();
+
+      function scrollByOneSlide(direction) {
+        const card = slides[0];
+        const gap = 18;
+        const amount = (card.getBoundingClientRect().width + gap) * direction;
+        track.scrollBy({ left: amount, behavior: "smooth" });
+      }
+      prevBtn?.addEventListener("click", () => scrollByOneSlide(-1));
+      nextBtn?.addEventListener("click", () => scrollByOneSlide(1));
+
+      // Gentle autoplay — pauses on hover/touch/focus and honors reduced motion
+      if (!marqueeReducedMotion) {
+        let autoplayTimer = window.setInterval(() => {
+          const atEnd =
+            Math.ceil(track.scrollLeft + track.clientWidth) >=
+            track.scrollWidth - 2;
+          if (atEnd) {
+            track.scrollTo({ left: 0, behavior: "smooth" });
+          } else {
+            scrollByOneSlide(1);
+          }
+        }, 3200);
+
+        ["mouseenter", "touchstart", "focusin"].forEach((evt) => {
+          track.addEventListener(evt, () => window.clearInterval(autoplayTimer));
+        });
+      }
+    })();
+
+    // ----- Light / dark theme toggle -----
+    const themeToggleBtn = document.getElementById("themeToggleBtn");
+    if (themeToggleBtn) {
+      themeToggleBtn.addEventListener("click", () => {
+        const current =
+          document.documentElement.getAttribute("data-theme") || "light";
+        const next = current === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", next);
+        try {
+          localStorage.setItem("nara-theme", next);
+        } catch (e) {
+          /* ignore storage errors (e.g. private browsing) */
+        }
+      });
+    }
+
+    // ----- Floating Mandarin words: dodge the cursor on approach -----
+    const heroWordRain = document.getElementById("heroWordRain");
+    if (heroWordRain && !prefersReducedMotion) {
+      const words = Array.from(heroWordRain.querySelectorAll(".hero-word"));
+      const repelRadius = 90;
+
+      document.addEventListener("mousemove", (e) => {
+        words.forEach((word) => {
+          const rect = word.getBoundingClientRect();
+          const cx = rect.left + rect.width / 2;
+          const cy = rect.top + rect.height / 2;
+          const dx = cx - e.clientX;
+          const dy = cy - e.clientY;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+
+          if (dist < repelRadius) {
+            const force = (repelRadius - dist) / repelRadius;
+            const pushX = (dx / (dist || 1)) * force * 46;
+            const pushY = (dy / (dist || 1)) * force * 46;
+            word.style.transform = `translate(${pushX}px, ${pushY}px)`;
+            word.style.opacity = "0.85";
+          } else {
+            word.style.transform = "translate(0px, 0px)";
+            word.style.opacity = "";
+          }
+        });
+      });
+    }
+  </script>
+</body>
+
+</html>
