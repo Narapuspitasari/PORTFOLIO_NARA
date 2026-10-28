@@ -3151,6 +3151,20 @@
         });
       });
     }
+
+    const result = await response.json().catch(() => ({}));
+
+if (response.ok && result.success) {
+  contactForm.reset();
+  showSuccessPopup();
+  ["name", "email", "message"].forEach((id) => {
+    document.getElementById(id).closest(".form-field").classList.remove("valid", "invalid");
+  });
+} else {
+  // blok error tetap seperti semula
+}
+
+    
   </script>
 </body>
 
