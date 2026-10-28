@@ -17,6 +17,61 @@
     href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;family=Noto+Serif+SC:wght@400;600;700&amp;display=swap"
     rel="stylesheet" />
   <link href="style.css" rel="stylesheet" />
+  <style>
+/* ----- Contact form: success popup ----- */
+.success-popup{
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(38, 26, 16, 0.72);
+  backdrop-filter: blur(8px);
+  z-index: 1100;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.success-popup.active{ display: flex; }
+.success-popup-box{
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  max-width: 400px;
+  width: 100%;
+  padding: 32px 28px 28px;
+  text-align: center;
+  font-family: var(--font-main);
+  box-shadow: 0 20px 48px rgba(58,42,26,0.28);
+  animation: modalPop .25s ease;
+}
+.success-popup-icon{
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #FBEEE3;
+  background: var(--teal);
+}
+.success-popup-box h3{
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+.success-popup-box p{
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-soft);
+  margin-bottom: 20px;
+}
+.success-popup-box .btn{ min-width: 120px; }
+@media (prefers-reduced-motion: reduce){
+  .success-popup-box{ animation: none; }
+}
+  </style>
   <script>
     (function () {
       try {
@@ -2493,23 +2548,27 @@
               <h2 style="font-size: 18px; margin-bottom: 16px">
                 Send a Message
               </h2>
-              <form id="contactForm" action="https://formspree.io/f/xzeboarj" method="POST">
-                <div class="form-field">
+              <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+                <input type="hidden" name="access_key" value="4324d1e4-09ef-4399-b67e-c0e0ff8e32a3" />
+                <div class="form-field" data-field="name">
                   <label for="name">FULL NAME</label>
                   <input id="name" name="name" placeholder="Enter your name..." required="" type="text" />
+                  <div class="field-error">Please enter your name.</div>
                 </div>
-                <div class="form-field">
+                <div class="form-field" data-field="email">
                   <label for="email">EMAIL ADDRESS</label>
-                  <input id="email" name="_replyto" placeholder="nama@email.com" required="" type="email" />
+                  <input id="email" name="email" placeholder="nama@email.com" required="" type="email" />
+                  <div class="field-error">Please enter a valid email address.</div>
                 </div>
-                <div class="form-field">
+                <div class="form-field" data-field="message">
                   <label for="message">MESSAGE</label>
                   <textarea id="message" name="message" placeholder="Write your message here..." required=""></textarea>
+                  <div class="field-error">Message is too short.</div>
                 </div>
 
-                <!-- anti-spam honeypot, jangan dihapus -->
-                <input type="text" name="_gotcha" style="display: none" tabindex="-1" autocomplete="off" />
-                <input type="hidden" name="_subject" value="New message from your portfolio site" />
+                <!-- anti-spam honeypot Web3Forms, jangan dihapus -->
+                <input type="checkbox" name="botcheck" style="display: none" tabindex="-1" autocomplete="off" />
+                <input type="hidden" name="subject" value="New message from your portfolio site" />
 
                 <button class="btn btn-primary" id="contactSubmitBtn" style="width: 100%" type="submit">
                   Send Message →
@@ -2571,6 +2630,14 @@
       <polyline points="5 12 12 5 19 12"></polyline>
     </svg>
   </button>
+  <div class="success-popup" id="successPopup" role="dialog" aria-modal="true" aria-labelledby="successPopupTitle">
+    <div class="success-popup-box">
+      <div class="success-popup-icon" aria-hidden="true">✓</div>
+      <h3 id="successPopupTitle">Message Sent!</h3>
+      <p>Thank you for reaching out. Your message has been delivered and I'll reply to your email soon.</p>
+      <button class="btn btn-primary" id="successPopupClose" type="button">Close</button>
+    </div>
+  </div>
   <div class="cert-modal" id="certModal">
     <div class="modal-box">
       <div class="modal-header">
@@ -2786,6 +2853,27 @@
       return nameValid && emailValid && messageValid;
     }
 
+    // Success popup after the message is sent
+    const successPopup = document.getElementById("successPopup");
+    const successPopupClose = document.getElementById("successPopupClose");
+    function showSuccessPopup() {
+      successPopup.classList.add("active");
+      document.body.style.overflow = "hidden";
+      successPopupClose.focus();
+    }
+    function closeSuccessPopup() {
+      successPopup.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+    successPopupClose.addEventListener("click", closeSuccessPopup);
+    successPopup.addEventListener("click", (e) => {
+      if (e.target === successPopup) closeSuccessPopup();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && successPopup.classList.contains("active"))
+        closeSuccessPopup();
+    });
+
     if (contactForm) {
       // Clear a field's error state as soon as the person starts fixing it
       ["name", "email", "message"].forEach((id) => {
@@ -2819,11 +2907,11 @@
             headers: { Accept: "application/json" },
           });
 
-          if (response.ok) {
-            contactStatus.textContent =
-              "Message sent — thank you! I'll reply to your email soon.";
-            contactStatus.className = "status-success";
+          const result = await response.json().catch(() => ({}));
+
+          if (response.ok && result.success) {
             contactForm.reset();
+            showSuccessPopup();
             ["name", "email", "message"].forEach((id) => {
               document
                 .getElementById(id)
