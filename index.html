@@ -141,7 +141,7 @@
       <div class="section" id="home" style="margin-top: 10px">
         <div class="hero-poster-wrapper">
           <!-- Uploaded ink-wash calligraphy artwork, used as a soft hero backdrop -->
-          <img class="hero-calligraphy-bg" src="hero-calligraphy-bg (1).png" alt="" aria-hidden="true" />
+          <!-- <img class="hero-calligraphy-bg" src="hero-calligraphy-bg (1).png" alt="" aria-hidden="true" /> -->
 
           <!-- Floating Mandarin words that dodge the cursor -->
           <div class="hero-word-rain" id="heroWordRain" aria-hidden="true">
@@ -2907,22 +2907,7 @@
             headers: { Accept: "application/json" },
           });
 
-          const result = await response.json().catch(() => ({}));
-
-          if (response.ok && result.success) {
-            contactForm.reset();
-            showSuccessPopup();
-            ["name", "email", "message"].forEach((id) => {
-              document
-                .getElementById(id)
-                .closest(".form-field")
-                .classList.remove("valid", "invalid");
-            });
-          } else {
-            contactStatus.textContent =
-              "Something went wrong sending your message. Please try again or email me directly.";
-            contactStatus.className = "status-error";
-          }
+        
         } catch (err) {
           contactStatus.textContent =
             "Network error — please check your connection and try again.";
