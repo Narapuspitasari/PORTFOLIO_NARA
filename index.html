@@ -1779,7 +1779,6 @@
           </button>
           <!-- <button class="filter-tab" onclick="filterCerts('UI/UX', event)">
             [ UI/UX ] -->
-          </button>
           <button class="filter-tab" onclick="filterCerts('LANGUAGE', event)">
             [ LANGUAGE ]
           </button>
@@ -2907,7 +2906,22 @@
             headers: { Accept: "application/json" },
           });
 
-        
+          const result = await response.json().catch(() => ({}));
+
+          if (response.ok && result.success) {
+            contactForm.reset();
+            showSuccessPopup();
+            ["name", "email", "message"].forEach((id) => {
+              document
+                .getElementById(id)
+                .closest(".form-field")
+                .classList.remove("valid", "invalid");
+            });
+          } else {
+            contactStatus.textContent =
+              "Something went wrong sending your message. Please try again or email me directly.";
+            contactStatus.className = "status-error";
+          }
         } catch (err) {
           contactStatus.textContent =
             "Network error — please check your connection and try again.";
@@ -3137,19 +3151,6 @@
       });
     }
 
-    const result = await response.json().catch(() => ({}));
-
-if (response.ok && result.success) {
-  contactForm.reset();
-  showSuccessPopup();
-  ["name", "email", "message"].forEach((id) => {
-    document.getElementById(id).closest(".form-field").classList.remove("valid", "invalid");
-  });
-} else {
-  // blok error tetap seperti semula
-}
-
-    
   </script>
 </body>
 
